@@ -4,9 +4,9 @@
     ./nvidia.nix
     ./packages.nix
     ../../modules/system
+    #../../modules/programs
     ../../scripts
   ];
-  networking.hostName = "dark-bramble"; # Define your hostname.
-  boot.supportedFilesystems = [ "ntfs" ];
+  networking.hostName = "dark-bramble";
   system.stateVersion = "23.11";
 }

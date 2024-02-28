@@ -6,5 +6,6 @@
     ./system.nix
     ./users.nix
     ./utilities.nix
+    /home/nick/NixOS/modules/system/packages.nix
   ];
 }

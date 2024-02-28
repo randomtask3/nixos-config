@@ -5,7 +5,7 @@
 }:{
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
-    # stalled-download-timeout = 10000;
+    # stalled-download-timeout = 1000;
     trusted-users = [ "nick" ];
     substituters = [
       # cache mirror located in China
@@ -20,6 +20,15 @@
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
     ];
   };
+
+  nixpkgs.config = {
+    allowUnfree = true;
+    permittedInsecurePackages = [
+      #"electron-12.2.3"
+    ];
+  };
+
+  boot.supportedFilesystems = [ "ntfs" ];
 
   # Set your time zone.
   time.timeZone = "America/Montreal"; # Set your time zone.

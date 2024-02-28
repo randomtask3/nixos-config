@@ -1,5 +1,4 @@
 {
-  boot.supportedFilesystems = [ "ntfs" ];
   fileSystems."/home/nick/Media" = {
     device = "/dev/vg-Data/lv-Data";
     fsType = "btrfs";
