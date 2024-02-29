@@ -1,15 +1,16 @@
-{ pkgs, 
-  helix, 
-  config, 
+{ config,
+  pkgs,
+  pkgs-stable,
+  helix,
   ... 
 }:
 let
-  unstable = import <nixos-unstable> { config = { allowUnfree = true; }; };
+  #stable = import inputs.nix { config = { allowUnfree = true; }; };
 in {
   environment.systemPackages = with pkgs; [    
     ######### GAMING SOFTWARE ###########
     xivlauncher
-    prismlauncher
+    pkgs-stable.prismlauncher
     #unstable.vintagestory
     #mangohud goverlay
     #protonup wine winetricks dxvk
@@ -18,9 +19,13 @@ in {
     
     ######### SOURCE PORTS ###########
     #openrct2
-    #unstable.shipwright
+    #shipwright
     #openloco
     #dhewm3
+    #fallout-ce
+    #fallout2-ce
+    #openxray
+    #arx-libertatis
 
     ######## EMULATORS #########
     #cemu

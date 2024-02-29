@@ -1,5 +1,6 @@
 { config,
   pkgs,
+  pkgs-stable,
   ... 
 }:{
   environment.systemPackages = with pkgs; [
@@ -10,6 +11,10 @@
     dialog
     discord
     vscodium
+    #fallout-ce
+    #fallout2-ce
+    #openrct2
+    #openloco
   ];
 
   virtualisation.libvirtd.enable = true;
