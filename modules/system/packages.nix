@@ -24,17 +24,15 @@
       enable = true;
       remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
       dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+      gamescopeSession = {
+        enable = true;
+        args = [
+
+        ];
+      };
     };
-    git = {
-      enable = true;
-      #config = ''
-      #  user.name randomtask3
-      #  user.email nbrooker@proton.me
-      #  core.autocrlf input
-      #'';
-    };
-    virt-manager = {
-      enable = true;
-    };
+    
+    git.enable = true;
+    virt-manager.enable = true;
   };
 }

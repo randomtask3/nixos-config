@@ -7,5 +7,6 @@
     ./users.nix
     ./utilities.nix
     ./packages.nix
+    ./gamescope.nix
   ];
 }

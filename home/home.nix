@@ -8,6 +8,7 @@
   home.homeDirectory = "/home/nick";
 
   home.packages = with pkgs; [
+    #
   ];
 
   # link the configuration file in current directory to the specified location in home directory

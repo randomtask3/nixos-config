@@ -30,7 +30,7 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nick = import ./home/default.nix;
+            home-manager.users.nick = import ./home/home.nix;
           }
         ];
       };
@@ -49,7 +49,7 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nick = import ./home/default.nix;
+            home-manager.users.nick = import ./home/home.nix;
           }
         ];
       };
