@@ -11,6 +11,7 @@
     dialog
     discord
     vscodium
+    gnome.gnome-tweaks
     #fallout-ce
     #fallout2-ce
     #openrct2
