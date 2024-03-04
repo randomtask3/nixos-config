@@ -12,6 +12,8 @@
     discord
     vscodium
     gnome.gnome-tweaks
+    steamPackages.steamcmd
+    steam-tui
     #fallout-ce
     #fallout2-ce
     #openrct2
@@ -31,7 +33,8 @@
         ];
       };
     };
-    
+
+    gamemode.enable = true;
     git.enable = true;
     virt-manager.enable = true;
   };

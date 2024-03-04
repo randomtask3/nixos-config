@@ -11,6 +11,7 @@
     teams-for-linux
     wineWowPackages.full
     winetricks dxvk
+    glxinfo lshw
     #obsidian
   ];
 }
