@@ -9,8 +9,7 @@
     #pkgs-stable.package_name
     virtio-win
     teams-for-linux
-    wineWowPackages.full
-    winetricks dxvk
+    wineWowPackages.full winetricks dxvk
     glxinfo lshw
     #obsidian
   ];

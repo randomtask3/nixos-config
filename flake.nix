@@ -26,7 +26,7 @@
           };
         };
         modules = [
-          ./timber-hearth
+          ./hosts/timber-hearth
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
@@ -45,7 +45,7 @@
           };
         };
         modules = [
-          ./dark-bramble
+          ./hosts/dark-bramble
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
