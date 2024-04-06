@@ -1,12 +1,14 @@
 { config,
+  lib,
   pkgs,
   pkgs-stable,
   helix,
   ... 
-}:
-let
-  #stable = import inputs.nix { config = { allowUnfree = true; }; };
-in {
+}:{
+  options = {
+    games.enable = lib.mkEnableOption "enables games";
+  };
+
   environment.systemPackages = with pkgs; [    
     ######### GAMING SOFTWARE ###########
     xivlauncher
@@ -16,6 +18,8 @@ in {
     #protonup wine winetricks dxvk
     #lutris
     #gamescope
+    steamPackages.steamcmd
+    #steam-tui
     
     ######### SOURCE PORTS ###########
     #openrct2
@@ -39,49 +43,22 @@ in {
     #mupen64plus
     #yuzu-mainline
     #mednafen
-
-    ######## CODING & DDEVELOPMENT #########
-    emacs
-    #rustup
-    #texstudio texlive.combined.scheme-full
-    #libreoffice
-    #helix.packages."${pkgs.system}".helix
-
-    ######## 3D & ART #######
-    #freecad
-    #openscad
-    #kicad
-    #cura
-    #goxel
-    #gimp
-    #inkscape
-    #super-slicer
-
-    ######## INTERNET & UTILITIES #########
-    #vivaldi
-    #thunderbird #protonmail-bridge #electron-mail
-    #shotcut #audacity
-    #mcomix3 calibre
-    piper libratbag
-    gnucash
-    vlc #makemkv handbrake
-    #libsForQt5.ark unrar
-    #gnome.gnome-tweaks
-    #keepass
-    #authy
-    #qbittorrent #openvpn
-
-    ######## SYSTEM & CLI TOOLS ########
-    gparted
-    libimobiledevice usbmuxd ifuse
-    w3m
-    curl
-    feh
-    #rofi
-    #eww
   ];
 
   programs = {
+    steam = {
+      enable = true;
+      remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+      dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+      gamescopeSession = {
+        enable = true;
+        args = [
+
+        ];
+      };
+    };
+
+    gamemode.enable = true;
   };
 
   services = {

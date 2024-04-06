@@ -1,9 +1,14 @@
-{
+{ config,
+  lib,
+  ... 
+}:{
   imports = [
     ./hardware-configuration.nix
-    ./modules
-    ../../common
+    ./nvidia.nix
+    ./module_selections.nix
+    ../../modules
   ];
+
   networking.hostName = "dark-bramble";
   system.stateVersion = "23.11";
 }

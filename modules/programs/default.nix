@@ -1,5 +1,5 @@
 {
   imports = [
-    
+    #./starship.nix
   ];
 }
