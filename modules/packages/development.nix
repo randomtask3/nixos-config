@@ -5,10 +5,6 @@
   helix,
   ... 
 }:{
-  options = {
-    development.enable = lib.mkEnableOption "enables development";
-  };
-
   environment.systemPackages = with pkgs; [    
     ######## CODING & DDEVELOPMENT #########
     #rustup

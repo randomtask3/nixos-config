@@ -10,9 +10,4 @@
     ./utilities.nix
     ./work.nix
   ];
-
-  games.enable = lib.mkDefault false;
-  work.enable = lib.mkDefault false;
-  development.enable = lib.mkDefault false;
-  utilities.enable = lib.mkDefault false;
 }

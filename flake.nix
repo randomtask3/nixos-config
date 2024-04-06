@@ -16,7 +16,7 @@
     ...
   }:{ 
     nixosConfigurations = {
-      "timber-hearth" = nixpkgs.lib.nixosSystem rec {
+      "timber-hearth" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = {
           inherit inputs;
@@ -30,7 +30,7 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nick = import ./common/home.nix;
+            home-manager.users.nick = import ./modules/home;
           }
         ];
       };
@@ -49,7 +49,7 @@
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nick = import ./common/home.nix;
+            home-manager.users.nick = import ./modules/home;
           }
         ];
       };

@@ -2,12 +2,8 @@
   lib,
   ... 
 }:{
-  options = {
-    samba.enable = lib.mkEnableOption "enables samba";
-  };
-
   services.samba = {
-     enable = true;
+    enable = true;
 
     # This adds to the [global] section:
     extraConfig = ''
@@ -38,5 +34,4 @@
 
   networking.firewall.enable = true;
   networking.firewall.allowPing = true;
-
 }

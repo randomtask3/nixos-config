@@ -8,6 +8,4 @@
     #./minecraft_server.nix
     #./virtualiztion.nix
   ];
-
-  samba.enable = lib.mkDefault false;
 }

@@ -5,10 +5,6 @@
   helix,
   ... 
 }:{
-  options = {
-    games.enable = lib.mkEnableOption "enables games";
-  };
-
   environment.systemPackages = with pkgs; [    
     ######### GAMING SOFTWARE ###########
     xivlauncher
@@ -59,16 +55,5 @@
     };
 
     gamemode.enable = true;
-  };
-
-  services = {
-    # flatpak.enable = true;
-
-    #jellyfin = {
-    #  enable = true;
-    #  openFirewall = true;
-    #  user = "nick";
-    #  group = "users";
-    #};
   };
 }

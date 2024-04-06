@@ -5,10 +5,6 @@
   helix,
   ... 
 }:{
-  options = {
-    work.enable = lib.mkEnableOption "enables work";
-  };
-
   environment.systemPackages = with pkgs; [
     #helix.packages."${pkgs.system}".helix # Installing package using Flakes
     #pkgs-stable.package_name

@@ -5,10 +5,6 @@
   helix,
   ... 
 }:{
-  options = {
-    utilities.enable = lib.mkEnableOption "enables utilities";
-  };
-
   environment.systemPackages = with pkgs; [    
 
     ######## INTERNET & UTILITIES #########
