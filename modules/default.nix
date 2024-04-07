@@ -1,7 +1,6 @@
 {
   imports = [
     ./desktop
-    #./home
     ./packages
     #./programs
     ./scripts
