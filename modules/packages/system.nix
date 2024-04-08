@@ -12,6 +12,7 @@
     discord
     vscodium
     emacs
+    neofetch
   ];
 
   programs = {

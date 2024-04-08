@@ -14,7 +14,6 @@
     #protonup wine winetricks dxvk
     #lutris
     #gamescope
-    steamPackages.steamcmd
     #steam-tui
     
     ######### SOURCE PORTS ###########
@@ -40,20 +39,4 @@
     #yuzu-mainline
     #mednafen
   ];
-
-  programs = {
-    steam = {
-      enable = true;
-      remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-      dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-      gamescopeSession = {
-        enable = true;
-        args = [
-
-        ];
-      };
-    };
-
-    gamemode.enable = true;
-  };
 }

@@ -5,6 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    catppuccin.url = "github:catppuccin/nix";
     helix.url = "github:helix-editor/helix/master";
   };
 
@@ -12,6 +13,7 @@
     self,
     nixpkgs,
     nixpkgs-stable,
+    catppuccin,
     home-manager,
     ...
   }:{ 
@@ -27,10 +29,14 @@
         };
         modules = [
           ./hosts/timber-hearth
+          catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nick = import ./home;
+            home-manager.users.nick = { imports = [
+              ./home
+              catppuccin.homeManagerModules.catppuccin ];
+            };
           }
         ];
       };
@@ -46,10 +52,14 @@
         };
         modules = [
           ./hosts/dark-bramble
+          catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.nick = import ./home;
+            home-manager.users.nick = { imports = [
+              ./home
+              catppuccin.homeManagerModules.catppuccin ];
+            };
           }
         ];
       };

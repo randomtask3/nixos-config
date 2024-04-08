@@ -2,10 +2,9 @@
   imports = [
     ./desktop
     ./packages
-    #./programs
+    ./programs
     ./scripts
     ./server
     ./system
-    #./theme
   ];
 }
