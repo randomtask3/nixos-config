@@ -5,7 +5,6 @@
   imports = [
     ./hardware-configuration.nix
     ./filesystems.nix
-    ./module_selections.nix
     ../../modules
   ];
   disabledModules = [

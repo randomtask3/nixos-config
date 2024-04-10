@@ -6,6 +6,7 @@
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     catppuccin.url = "github:catppuccin/nix";
+    #agenix.url = "github:ryantm/agenix";
     helix.url = "github:helix-editor/helix/master";
   };
 
@@ -15,6 +16,7 @@
     nixpkgs-stable,
     catppuccin,
     home-manager,
+    agenix,
     ...
   }:{ 
     nixosConfigurations = {
@@ -29,6 +31,7 @@
         };
         modules = [
           ./hosts/timber-hearth
+          #agenix.nixosModules.default
           catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
@@ -52,6 +55,7 @@
         };
         modules = [
           ./hosts/dark-bramble
+          #agenix.nixosModules.default
           catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager {
             home-manager.useGlobalPkgs = true;
