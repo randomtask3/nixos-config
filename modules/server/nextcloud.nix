@@ -1,9 +1,26 @@
-{ self, config, lib, pkgs, ... }:
-
-{
+{ self, 
+  config, 
+  lib, 
+  pkgs, 
+  ... 
+}:{
+  environment.etc."nextcloud-admin-pass".text = "nick";
+  services.nextcloud = {
+    enable = true;
+    package = pkgs.nextcloud28;
+    hostName = "localhost";
+    config.adminpassFile = "/etc/nextcloud-admin-pass";
+  };
+}
+/*
+  security.acme = {
+    acceptTerms = true;
+    defaults.email = "nbrooker@proton.me";
+  };
+  
   services = {
     nginx.virtualHosts = {
-      "cloud.example.com" = {
+      "dark.bramble.com" = {
         forceSSL = true;
         enableACME = true;
       };
@@ -16,7 +33,7 @@
 
     nextcloud = {
       enable = true;
-      hostName = "cloud.example.com";
+      hostName = "dark.bramble.com";
 
        # Need to manually increment with every major upgrade.
       package = pkgs.nextcloud27;
@@ -30,7 +47,6 @@
       # Increase the maximum file upload size to avoid problems uploading videos.
       maxUploadSize = "16G";
       https = true;
-      enableBrokenCiphersForSSE = false;
 
       autoUpdateApps.enable = true;
       extraAppsEnable = true;
@@ -40,19 +56,21 @@
         inherit calendar contacts mail notes onlyoffice tasks;
 
         # Custom app installation example.
-        cookbook = pkgs.fetchNextcloudApp rec {
-          url =
-            "https://github.com/nextcloud/cookbook/releases/download/v0.10.2/Cookbook-0.10.2.tar.gz";
-          sha256 = "sha256-XgBwUr26qW6wvqhrnhhhhcN4wkI+eXDHnNSm1HDbP6M=";
-        };
+        #cookbook = pkgs.fetchNextcloudApp rec {
+        #  url =
+        #    "https://github.com/nextcloud/cookbook/releases/download/v0.10.2/Cookbook-0.10.2.tar.gz";
+        #  sha256 = "sha256-XgBwUr26qW6wvqhrnhhhhcN4wkI+eXDHnNSm1HDbP6M=";
+        #};
       };
 
-      config = {
+      settings = {
+        defaultPhoneRegion = "CA";
         overwriteProtocol = "https";
-        defaultPhoneRegion = "PT";
+      };
+      config = {
         dbtype = "pgsql";
-        adminuser = "admin";
-        adminpassFile = "/path/to/nextcloud-admin-pass";
+        adminuser = "randomtask";
+        adminpassFile = "/home/nick/Documents/nc_pass";
       };
     };
 
@@ -62,3 +80,4 @@
     #};
   };
 }
+*/

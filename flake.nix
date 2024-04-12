@@ -16,7 +16,7 @@
     nixpkgs-stable,
     catppuccin,
     home-manager,
-    agenix,
+    #agenix,
     ...
   }:{ 
     nixosConfigurations = {
