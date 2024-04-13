@@ -26,12 +26,4 @@
     enable = true;
     openFirewall = true;
   };
-
-  # Curiously, `services.samba` does not automatically open
-  # the needed ports in the firewall.
-  networking.firewall.allowedTCPPorts = [ 445 139 ];
-  networking.firewall.allowedUDPPorts = [ 137 138 ];
-
-  networking.firewall.enable = true;
-  networking.firewall.allowPing = true;
 }
