@@ -1,4 +1,4 @@
-{ description = "Outer Wilds Ventures NixOS Flake";
+{ description = "Outer Wilds Ventures Flake";
 
   inputs = {
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
