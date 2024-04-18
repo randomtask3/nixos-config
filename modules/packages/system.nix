@@ -13,12 +13,15 @@
     vscodium
     emacs
     neofetch
-    git-credential-manager
+    git-credential-oauth
   ];
 
   programs.git = {
     enable = true;
     package = pkgs.gitFull;
-    #config.credential.helper = "libsecret";
+    config = {
+      #credential.helper = "libsecret";
+      push = { autoSetupRemote = true; };
+    };
   };
 }
