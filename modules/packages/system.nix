@@ -13,7 +13,7 @@
     vscodium
     emacs
     neofetch
-    #git-credential-oauth
+    git-credential-oauth
   ];
 
   programs.git = {
