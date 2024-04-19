@@ -3,6 +3,6 @@
   ... 
 }:{
   imports = [
-    ./utilities.nix
+    ./work.nix
   ];
 }

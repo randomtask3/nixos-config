@@ -1,5 +1,5 @@
 {
   imports = [
-    ./steam.nix
+    ./development.nix
   ];
 }

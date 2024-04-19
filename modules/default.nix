@@ -1,10 +1,12 @@
 {
   imports = [
     ./desktop
+    ./development
+    ./gaming
     ./packages
-    ./programs
     ./scripts
     ./server
     ./system
+    ./work
   ];
 }

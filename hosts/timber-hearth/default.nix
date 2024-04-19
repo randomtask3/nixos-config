@@ -8,7 +8,7 @@
     ../../modules
   ];
   disabledModules = [
-    ../../modules/packages/work.nix 
+    ../../modules/work
   ];
 
   networking.hostName = "timber-hearth";

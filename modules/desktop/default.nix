@@ -1,5 +1,11 @@
-{
+{ config,
+  pkgs,
+  pkgs-stable,
+  ... 
+}:{
   imports = [
-    ./desktop.nix
+    ./gnome.nix
+    ./hyprland.nix
+    ./xorg.nix
   ];
 }

@@ -3,6 +3,7 @@
   ... 
 }:{
   imports = [
-    ./utilities.nix
+    ./steam.nix
+    ./games.nix
   ];
 }

@@ -3,24 +3,9 @@
   pkgs-stable,
   ... 
 }:{
-  # Enable the X11 windowing system.
   services.xserver = {
-    enable = true;
     displayManager.gdm.enable = true;
-    #displayManager.sddm.enable = true;
     desktopManager.gnome.enable = true;
-    #desktopManager.plasma6.enable = true;
-    windowManager = {
-      #exwm = {
-      #  enable = true;
-      #  extraPackages = epkgs: [
-      #    epkgs.magit
-      #  ];
-      #};
-      #bspwm.enable = true;
-      stumpwm.enable = true;
-      openbox.enable = true;
-    };
   };
 
   environment.gnome.excludePackages = (with pkgs; [

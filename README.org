@@ -3,3 +3,29 @@
 test text
 
 [[docs/test.org][Test file link]]
+
+TODO:
+Finish system configuration
+Learn home-manager for config files
+Configure EXWM with rofi, eww, picom, etc...
+
+Possible Hostnames or users:
+    Timber Hearth
+    Attlerock
+    Brittle Hollow
+    Hourglass Twins
+    Dark Bramble
+    Interloper
+    Giant's Deep
+    Quantum Moon
+    Hollow's Lantern
+    Eye of The  Universe
+    The Stranger
+    Nomai
+    Hearthian
+    Chert
+    Esker
+    Feldspar
+    Gabbro
+    Riebeck
+    Solanum
