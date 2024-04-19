@@ -21,7 +21,7 @@
     package = pkgs.gitFull;
     config = {
       credential.helper = "oauth";
-      push = { autoSetupRemote = true; };
+      #push = { autoSetupRemote = true; };
     };
   };
 }
