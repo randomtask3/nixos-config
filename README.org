@@ -2,4 +2,4 @@
 
 test text
 
-[[docs/test.org]][Test file link]
+[[docs/test.org][Test file link]]
