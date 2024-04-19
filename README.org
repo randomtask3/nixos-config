@@ -2,4 +2,4 @@
 
 test text
 
-#+INCLUDE: "docs/test.org" :minleavel 1
+[[docs/test.org]][Test file link]
