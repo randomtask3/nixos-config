@@ -2,14 +2,13 @@
 
 test text
 
-[[Heading 2]]
+[[** Heading 2]]
 
 [[docs/test.org][Test file link]]
 
 ** Heading 2
 
-*** TODO
-Finish system configuration
+*** TODO Finish system configuration
 Learn home-manager for config files
 Configure EXWM with rofi, eww, picom, etc...
 

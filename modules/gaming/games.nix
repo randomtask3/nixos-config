@@ -15,6 +15,10 @@
     #lutris
     #gamescope
     #steam-tui
+    #samrewritten
+    #steamtinkerlaunch
+    #steamguard-cli
+    
     
     ######### SOURCE PORTS ###########
     #openrct2

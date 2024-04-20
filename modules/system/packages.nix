@@ -26,4 +26,6 @@
       userEmail = "nbrooker@proton.me";
     };
   };
+
+  services.flatpak.enable = true;
 }
