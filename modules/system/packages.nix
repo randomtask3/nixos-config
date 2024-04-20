@@ -22,8 +22,8 @@
     config = {
       credential.helper = "oauth";
       #push = { autoSetupRemote = true; };
-      userName  = "randomtask3";
-      userEmail = "nbrooker@proton.me";
+      user.Name  = "randomtask3";
+      user.Email = "nbrooker@proton.me";
     };
   };
 }
