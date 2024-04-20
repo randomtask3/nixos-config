@@ -2,24 +2,29 @@
 
 test text
 
+[[Heading 2]]
+
 [[docs/test.org][Test file link]]
 
-TODO:
+** Heading 2
+
+*** TODO
 Finish system configuration
 Learn home-manager for config files
 Configure EXWM with rofi, eww, picom, etc...
 
 Possible Hostnames or users:
     Timber Hearth
-    Attlerock
-    Brittle Hollow
-    Hourglass Twins
     Dark Bramble
+    Attlerock
     Interloper
+    Brittle Hollow
+    Ash Twin
+    Ember Twin
     Giant's Deep
     Quantum Moon
     Hollow's Lantern
-    Eye of The  Universe
+    Eye of The Universe
     The Stranger
     Nomai
     Hearthian

@@ -22,6 +22,8 @@
     config = {
       credential.helper = "oauth";
       #push = { autoSetupRemote = true; };
+      userName  = "randomtask3";
+      userEmail = "nbrooker@proton.me";
     };
   };
 }
