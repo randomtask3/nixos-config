@@ -9,27 +9,28 @@ test text
 ** Heading 2
 
 *** TODO Finish system configuration
-    -Learn home-manager for config files
-    -Configure EXWM with rofi, eww, picom, etc...
+-Learn home-manager for config files
+-Configure a window manager with rofi, eww, picom, etc...
+-Figure out system theming
 
 Possible Hostnames or users:
-    Timber Hearth
-    Dark Bramble
-    Attlerock
-    Interloper
-    Brittle Hollow
-    Ash Twin
-    Ember Twin
-    Giant's Deep
-    Quantum Moon
-    Hollow's Lantern
-    Eye of The Universe
-    The Stranger
-    Nomai
-    Hearthian
-    Chert
-    Esker
-    Feldspar
-    Gabbro
-    Riebeck
-    Solanum
+-Timber Hearth
+-Dark Bramble
+-Attlerock
+-Interloper
+-Brittle Hollow
+-Ash Twin
+-Ember Twin
+-Giant's Deep
+-Quantum Moon
+-Hollow's Lantern
+-Eye of The Universe
+-The Stranger
+-Nomai
+-Hearthian
+-Chert
+-Esker
+-Feldspar
+-Gabbro
+-Riebeck
+-Solanum
