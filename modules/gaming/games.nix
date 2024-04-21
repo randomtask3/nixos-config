@@ -11,7 +11,7 @@
     pkgs-stable.prismlauncher
     #unstable.vintagestory
     #mangohud goverlay
-    #protonup wine winetricks dxvk
+    #protonup wineWowPackages.full winetricks dxvk
     #lutris
     #gamescope
     #steam-tui
