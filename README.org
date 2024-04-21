@@ -1,8 +1,16 @@
+## -*- coding: utf-8;mode: org;  -*-
+## This file is best viewed with GNU Emacs Org-mode: http://orgmode.org/
+
 * Heading Test
 
 test text
 
-[[** Heading 2]]
+[[Heading 2]]
+
+test reference
+
+[[hed:three]]
+[[hed:three][Reference to Hostnames]]
 
 [[docs/test.org][Test file link]]
 
@@ -13,7 +21,10 @@ test text
 -Configure a window manager with rofi, eww, picom, etc...
 -Figure out system theming
 
-Possible Hostnames or users:
+*** Possible Hostnames or users:
+:PROPERIES:
+:CUSTOM_ID: hed:three
+:END:
 -Timber Hearth
 -Dark Bramble
 -Attlerock
