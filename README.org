@@ -9,8 +9,8 @@ test text
 ** Heading 2
 
 *** TODO Finish system configuration
-Learn home-manager for config files
-Configure EXWM with rofi, eww, picom, etc...
+    -Learn home-manager for config files
+    -Configure EXWM with rofi, eww, picom, etc...
 
 Possible Hostnames or users:
     Timber Hearth
