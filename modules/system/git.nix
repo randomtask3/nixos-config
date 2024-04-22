@@ -14,4 +14,4 @@
       #pull.rebase = false;
     };
   };
-]
+}
