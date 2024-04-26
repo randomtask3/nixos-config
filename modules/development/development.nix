@@ -9,7 +9,7 @@
     ######## CODING & DDEVELOPMENT #########
     #rustup
     #texstudio texlive.combined.scheme-full
-    #libreoffice
+    libreoffice
     #helix.packages."${pkgs.system}".helix
 
     ######## 3D & ART #######

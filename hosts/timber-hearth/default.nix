@@ -3,6 +3,7 @@
   ... 
 }:{
   imports = [
+    ./amd.nix
     ./hardware-configuration.nix
     ./filesystems.nix
     ../../modules
