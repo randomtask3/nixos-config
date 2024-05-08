@@ -8,7 +8,7 @@
     ../../modules
   ];
   disabledModules = [
-    ../../modules/gaming
+    #../../modules/gaming
     ../../modules/development
     ../../modules/packages
     ../../modules/server
