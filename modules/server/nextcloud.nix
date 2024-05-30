@@ -14,7 +14,8 @@
     config = {
       dbtype = "pgsql";
       adminpassFile = "/etc/ncpass";
+      extraTrustedDomains = [ "192.168.1.124" ];
     };
-    settings.trusted_domains = [ "192.168.1.124" ];
+    #settings.trusted_domains = [ "192.168.1.124" ];
   };
 }

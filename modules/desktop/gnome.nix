@@ -1,12 +1,16 @@
 { config,
   pkgs,
-  pkgs-stable,
+  pkgs-unstable,
   ... 
 }:{
   services.xserver = {
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    gnome.gnome-tweaks
+  ];
 
   environment.gnome.excludePackages = (with pkgs; [
     gnome-photos

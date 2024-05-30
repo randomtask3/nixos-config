@@ -1,18 +1,18 @@
 { config,
   lib,
   pkgs,
-  pkgs-stable,
+  pkgs-unstable,
   helix,
   ... 
 }:{
   environment.systemPackages = with pkgs; [
     #helix.packages."${pkgs.system}".helix # Installing package using Flakes
-    #pkgs-stable.package_name
+    #pkgs-unstable.package_name
     virtio-win
     teams-for-linux
     wineWowPackages.full winetricks dxvk
     glxinfo lshw
-    pkgs-stable.microsoft-edge
+    pkgs-unstable.microsoft-edge
     #obsidian
   ];
 

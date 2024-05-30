@@ -1,11 +1,11 @@
 { config,
   pkgs,
-  pkgs-stable,
+  pkgs-unstable,
   ... 
 }:{
   imports = [
-    ./kde.nix
-    #./gnome.nix
+    #./kde.nix
+    ./gnome.nix
     ./hyprland.nix
     ./xorg.nix
   ];

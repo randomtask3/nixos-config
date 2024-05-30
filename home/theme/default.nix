@@ -1,3 +1,3 @@
 {
-  catppuccin.flavour = "mocha";
+  #catppuccin.flavour = "mocha";
 }

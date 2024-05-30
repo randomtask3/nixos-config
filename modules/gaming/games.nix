@@ -1,15 +1,15 @@
 { config,
   lib,
   pkgs,
-  pkgs-stable,
+  pkgs-unstable,
   helix,
   ... 
 }:{
   environment.systemPackages = with pkgs; [    
     ######### GAMING SOFTWARE ###########
     xivlauncher
-    pkgs-stable.prismlauncher
-    #unstable.vintagestory
+    prismlauncher
+    #pkgs-unstable.vintagestory
     #mangohud goverlay
     #protonup wineWowPackages.full winetricks dxvk
     #lutris

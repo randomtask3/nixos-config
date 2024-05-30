@@ -1,9 +1,9 @@
 { description = "Outer Wilds Ventures Flake";
 
   inputs = {
-    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-23.11";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    home-manager.url = "github:nix-community/home-manager/release-23.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     catppuccin.url = "github:catppuccin/nix";
     #agenix.url = "github:ryantm/agenix";
@@ -13,7 +13,7 @@
   outputs = inputs@{
     self,
     nixpkgs,
-    nixpkgs-stable,
+    nixpkgs-unstable,
     catppuccin,
     home-manager,
     #agenix,
@@ -24,7 +24,7 @@
         system = "x86_64-linux";
         specialArgs = {
           inherit inputs;
-          pkgs-stable = import nixpkgs-stable {
+          pkgs-unstable = import nixpkgs-unstable {
             system = "x86_64-linux";
             config.allowUnfree = true;
           };
@@ -48,7 +48,7 @@
         system = "x86_64-linux";
         specialArgs = {
           inherit inputs;
-          pkgs-stable = import nixpkgs-stable {
+          pkgs-unstable = import nixpkgs-unstable {
             system = "x86_64-linux";
             config.allowUnfree = true;
           };

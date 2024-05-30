@@ -1,6 +1,6 @@
 { config,
   pkgs,
-  pkgs-stable,
+  pkgs-unstable,
   ... 
 }:{
   environment.systemPackages = with pkgs; [

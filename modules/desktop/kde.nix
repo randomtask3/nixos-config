@@ -1,11 +1,11 @@
 { config,
   pkgs,
-  pkgs-stable,
+  pkgs-unstable,
   ... 
 }:{
   services = {
-    displayManager.sddm.enable = true;
-    desktopManager.plasma6.enable = true;
+    xserver.displayManager.sddm.enable = true;
+    xserver.desktopManager.plasma5.enable = true;
+    #desktopManager.plasma6.enable = true;
   };
-
 }
