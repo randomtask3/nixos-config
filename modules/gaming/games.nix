@@ -10,7 +10,7 @@
     xivlauncher
     prismlauncher
     #pkgs-unstable.vintagestory
-    #mangohud goverlay
+    mangohud 
     #protonup wineWowPackages.full winetricks dxvk
     #lutris
     #gamescope
