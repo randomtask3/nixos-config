@@ -9,7 +9,6 @@
     kitty
     mc
     dialog
-    discord
     vscodium
     emacs
     neofetch
