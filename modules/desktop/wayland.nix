@@ -10,6 +10,8 @@
         enable = true;
       };
     };
-    sway.enable = true;
+    #sway.enable = true;
+    wayfire.enable = true;
+    #river.enable = true;
   };
 }

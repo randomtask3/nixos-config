@@ -4,9 +4,8 @@
   ... 
 }:{
   imports = [
-    #./kde.nix
     ./gnome.nix
-    ./hyprland.nix
+    ./wayland.nix
     ./xorg.nix
   ];
 }
