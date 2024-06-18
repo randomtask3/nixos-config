@@ -12,7 +12,6 @@
     teams-for-linux
     wineWowPackages.full winetricks dxvk
     glxinfo lshw
-    pkgs-unstable.microsoft-edge
     #obsidian
   ];
 

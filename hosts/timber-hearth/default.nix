@@ -5,6 +5,7 @@
   imports = [
     ./hardware-configuration.nix
     ./filesystems.nix
+    ./grub.nix
     ../../modules
   ];
   disabledModules = [
