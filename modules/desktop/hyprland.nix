@@ -11,7 +11,7 @@
   };
   
   environment.systemPackages = with pkgs; [ 
-    wofi
+    rofi-wayland
     gcolor3 
   ];
 }
