@@ -2,7 +2,6 @@
   lib,
   pkgs,
   pkgs-unstable,
-  helix,
   ... 
 }:{
   programs = {
@@ -17,13 +16,8 @@
     gamescope.enable = true;
   };
   hardware.steam-hardware.enable = true;
-  hardware.opengl = {
-    ## radv: an open-source Vulkan driver from freedesktop
-    driSupport = true;
-    driSupport32Bit = true;
 
-    ## amdvlk: an open-source Vulkan driver from AMD
-    extraPackages = [ pkgs.amdvlk ];
-    extraPackages32 = [ pkgs.driversi686Linux.amdvlk ];
-  };
+  environment.systemPackages = with pkgs; [
+    mangohud
+  ];
 }

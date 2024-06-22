@@ -6,6 +6,7 @@
     ./hardware-configuration.nix
     ./filesystems.nix
     ./grub.nix
+    ./amd.nix
     ../../modules
   ];
   disabledModules = [

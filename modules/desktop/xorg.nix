@@ -6,7 +6,7 @@
   services.xserver = {
     windowManager = {
       #bspwm.enable = true;
-      stumpwm.enable = true;
+      #stumpwm.enable = true;
       #i3.enable = true;
       #dwm.enable = true;
       #awesome.enable = true;

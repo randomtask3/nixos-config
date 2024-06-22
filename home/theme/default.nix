@@ -1,3 +1,6 @@
-{
-  catppuccin.flavour = "mocha";
+{ catppuccin, 
+  ... 
+}:{
+  catppuccin.flavor = "mocha";
+  catppuccin.enable = true;
 }

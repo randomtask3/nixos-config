@@ -1,6 +1,6 @@
 {
   boot.loader.grub.extraEntries = ''
-    menuentry "GNU Guix" --class guix --class os {
+    menuentry "Guix" --class guix --class os {
       insmod part_gpt
       insmod ext2
       insmod fat

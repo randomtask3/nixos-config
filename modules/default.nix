@@ -1,4 +1,6 @@
-{
+{ catppuccin,
+  ...
+}:{
   imports = [
     ./desktop
     ./development
@@ -9,4 +11,8 @@
     ./system
     ./work
   ];
+
+  catppuccin.flavor = "mocha";
+  catppuccin.enable = true;
+  catppuccin.accent = "mauve";
 }

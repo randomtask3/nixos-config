@@ -2,7 +2,6 @@
   lib,
   pkgs,
   pkgs-unstable,
-  helix,
   ... 
 }:{
   environment.systemPackages = with pkgs; [    
@@ -10,15 +9,12 @@
     xivlauncher
     prismlauncher
     #pkgs-unstable.vintagestory
-    mangohud 
     #protonup wineWowPackages.full winetricks dxvk
     #lutris
-    #gamescope
     #steam-tui
     #samrewritten
     #steamtinkerlaunch
     #steamguard-cli
-    
     
     ######### SOURCE PORTS ###########
     #openrct2
