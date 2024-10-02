@@ -7,13 +7,15 @@
     wget
     firefox
     kitty
-    mc
+    #mc
     dialog
-    vscodium
     emacs
-    neofetch
     git-credential-oauth
   ];
 
   services.flatpak.enable = true;
+  services.emacs = {
+    enable = true;
+    package = pkgs.emacs;
+  };
 }

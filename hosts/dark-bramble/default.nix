@@ -15,5 +15,5 @@
   ];
 
   networking.hostName = "dark-bramble";
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 }

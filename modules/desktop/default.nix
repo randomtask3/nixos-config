@@ -6,7 +6,7 @@
   imports = [
     #./gnome.nix
     ./kde.nix
-    ./hyprland.nix
+    #./hyprland.nix
     ./xorg.nix
   ];
 }

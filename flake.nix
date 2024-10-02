@@ -7,7 +7,7 @@
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     catppuccin.url = "github:catppuccin/nix";
     #agenix.url = "github:ryantm/agenix";
-    helix.url = "github:helix-editor/helix/master";
+    #helix.url = "github:helix-editor/helix/master";
   };
 
   outputs = inputs@{

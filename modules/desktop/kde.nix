@@ -11,7 +11,7 @@
   };
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
-    plasma-browser-integration
+    #plasma-browser-integration
     konsole
   ];
 }
