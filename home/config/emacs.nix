@@ -1,4 +1,7 @@
-{
+{ pkgs,
+  catppuccin,
+  ...
+}:{
   programs.emacs = {
     enable = true;
     package = pkgs.emacs;
@@ -10,7 +13,7 @@
       (tooltip-mode -1)      ; Disable tooltips
       (set-fringe-mode 10)   ; Give some breathing room
 
-      (menu-bar-mode -1)     ; Disable the menu bar
+      (menu-bar-mode 1)     ; Disable the menu bar
 
       (setq standard-indent 2)
     '';
