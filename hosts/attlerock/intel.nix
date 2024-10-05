@@ -4,6 +4,7 @@
   ...
 }:{
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelParams = [ "i915.force_probe=46d1" ];
   hardware.opengl = {
     enable = true;
     extraPackages = with pkgs; [
@@ -12,5 +13,4 @@
       # intel-media-sdk   # for older GPUs
     ];
   };
-
 }
