@@ -3,8 +3,8 @@
   pkgs-unstable,
   ...
 }:{
-  services.displayManager = {
+  services.displayManager.sddm = {
     autoLogin.enable = true;
-    autoLogin.user = 'username';
+    autoLogin.user = 'nick';
   }
 }
