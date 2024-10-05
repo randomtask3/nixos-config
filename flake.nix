@@ -20,6 +20,7 @@
     ...
   }:{ 
     nixosConfigurations = {
+
       "timber-hearth" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = {
@@ -31,6 +32,30 @@
         };
         modules = [
           ./hosts/timber-hearth
+          #agenix.nixosModules.default
+          catppuccin.nixosModules.catppuccin
+          home-manager.nixosModules.home-manager {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.nick = { imports = [
+              ./home
+              catppuccin.homeManagerModules.catppuccin ];
+            };
+          }
+        ];
+      };
+
+      "attlerock" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {
+          inherit inputs;
+          pkgs-unstable = import nixpkgs-unstable {
+            system = "x86_64-linux";
+            config.allowUnfree = true;
+          };
+        };
+        modules = [
+          ./hosts/attlerock
           #agenix.nixosModules.default
           catppuccin.nixosModules.catppuccin
           home-manager.nixosModules.home-manager {
