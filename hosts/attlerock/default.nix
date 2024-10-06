@@ -12,6 +12,8 @@
     ../../modules/work
     ../../modules/server
     ../../modules/packages
+    ../../modules/desktop
+    ../../modules/system/bootloader.nix
   ];
 
   networking.hostName = "attlerock";
