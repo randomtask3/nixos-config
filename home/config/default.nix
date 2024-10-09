@@ -1,7 +1,7 @@
 {
   imports = [
     ./kitty.nix
-    ./emacs.nix
+    #./emacs.nix
     #./hyprland.nix
     #./dtarship.nix
   ];
