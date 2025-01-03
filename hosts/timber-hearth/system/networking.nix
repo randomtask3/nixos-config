@@ -9,7 +9,7 @@
       prefixLength = 24;
     }];
 
-    defaultGateway = "10.66.0.2";
+    defaultGateway = "10.66.0.1";
     #nameservers = [ "1.1.1.1" "8.8.8.8" ];
 
     #vlans = {
