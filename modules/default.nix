@@ -1,12 +1,7 @@
-{ catppuccin,
-  ...
-}:{
+{
   imports = [
+    #./config
     ./desktop
-    #./development
-    ./gaming
-    ./packages
     ./system
-    ./work
   ];
 }

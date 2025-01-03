@@ -3,17 +3,15 @@
   ... 
 }:{
   imports = [
-    ./hardware-configuration.nix
-    ./filesystems.nix
-    ./bootloader.nix
+    ./packages
     ./server
-    #./amd.nix
+    ./system
     ../../modules
     ../../scripts
     ../../theme
   ];
   disabledModules = [
-    ../../modules/work
+    #../modules/work
   ];
 
   networking.hostName = "timber-hearth";

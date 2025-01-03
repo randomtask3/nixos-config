@@ -1,5 +1,30 @@
 {
-  networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
+  networking = {
+    hosts = {
+      "127.0.0.2" = ["other-localhost"];
+    };
+    dhcpcd.enable = false;
+    interfaces.enp34s0.ipv4.addresses = [{
+      address = "10.66.0.10";
+      prefixLength = 24;
+    }];
+
+    defaultGateway = "10.66.0.2";
+    #nameservers = [ "1.1.1.1" "8.8.8.8" ];
+
+    #vlans = {
+    #  vlan100 = { id=100; interface="enp2s0"; };
+    #  vlan101 = { id=101; interface="enp2s0"; };
+    #};
+    #interfaces.vlan100.ipv4.addresses = [{
+    #  address = "10.1.1.2";
+    #  prefixLength = 24;
+    #}];
+    #interfaces.vlan101.ipv4.addresses = [{
+    #  address = "10.10.10.3";
+    #  prefixLength = 24;
+    #}];
+  };
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";

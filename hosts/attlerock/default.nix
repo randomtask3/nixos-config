@@ -9,13 +9,10 @@
     ../../modules
   ];
   disabledModules = [
-    ../../modules/work
-    ../../modules/server
-    ../../modules/packages
-    ../../modules/desktop
-    ../../modules/system/bootloader.nix
+
   ];
 
+  networking.networkmanager.enable = true;
   networking.hostName = "attlerock";
   system.stateVersion = "24.05";
 }
