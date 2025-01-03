@@ -5,7 +5,7 @@
   imports = [
     ./hardware-configuration.nix
     ./filesystems.nix
-    ./grub.nix
+    ./bootloader.nix
     ./server
     #./amd.nix
     ../../modules

@@ -1,6 +1,5 @@
 {
   imports = [
-    ./bootloader.nix
     ./git.nix
     ./networking.nix
     ./packages.nix
