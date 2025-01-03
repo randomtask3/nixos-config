@@ -6,7 +6,7 @@
 }:{
   environment.systemPackages = with pkgs; [    
     ######### GAMING SOFTWARE ###########
-    xivlauncher
+    #xivlauncher
     prismlauncher
     #pkgs-unstable.vintagestory
     #protonup wineWowPackages.full winetricks dxvk

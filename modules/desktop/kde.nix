@@ -6,7 +6,11 @@
 
   services = {
     xserver.enable = true;
-    displayManager.sddm.enable = true;
+    xserver.displayManager.lightdm.enable = true;
+    displayManager = {
+      autoLogin.enable = true;
+      autoLogin.user = "nick";
+    };
     desktopManager.plasma6.enable = true;
   };
 

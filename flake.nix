@@ -2,9 +2,7 @@
 
   inputs = {
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
-    home-manager.url = "github:nix-community/home-manager/release-24.05";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     catppuccin.url = "github:catppuccin/nix";
     #agenix.url = "github:ryantm/agenix";
     #helix.url = "github:helix-editor/helix/master";
@@ -15,7 +13,6 @@
     nixpkgs,
     nixpkgs-unstable,
     catppuccin,
-    home-manager,
     #agenix,
     ...
   }:{ 
@@ -34,14 +31,6 @@
           ./hosts/timber-hearth
           #agenix.nixosModules.default
           catppuccin.nixosModules.catppuccin
-          home-manager.nixosModules.home-manager {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.nick = { imports = [
-              ./home
-              catppuccin.homeManagerModules.catppuccin ];
-            };
-          }
         ];
       };
 
@@ -58,14 +47,6 @@
           ./hosts/attlerock
           #agenix.nixosModules.default
           catppuccin.nixosModules.catppuccin
-          home-manager.nixosModules.home-manager {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.nick = { imports = [
-              ./home
-              catppuccin.homeManagerModules.catppuccin ];
-            };
-          }
         ];
       };
 
@@ -82,14 +63,6 @@
           ./hosts/dark-bramble
           #agenix.nixosModules.default
           catppuccin.nixosModules.catppuccin
-          home-manager.nixosModules.home-manager {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.nick = { imports = [
-              ./home
-              catppuccin.homeManagerModules.catppuccin ];
-            };
-          }
         ];
       };
     };

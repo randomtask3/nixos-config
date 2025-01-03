@@ -6,6 +6,6 @@
   ... 
 }:{
   environment.systemPackages = with pkgs; [    
-    steamPackages.steamcmd
+    #steamcmd
   ];
 }

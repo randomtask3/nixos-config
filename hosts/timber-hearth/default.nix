@@ -6,13 +6,16 @@
     ./hardware-configuration.nix
     ./filesystems.nix
     ./grub.nix
-    ./amd.nix
+    ./server
+    #./amd.nix
     ../../modules
+    ../../scripts
+    ../../theme
   ];
   disabledModules = [
     ../../modules/work
   ];
 
   networking.hostName = "timber-hearth";
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.11";
 }

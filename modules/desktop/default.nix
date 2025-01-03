@@ -7,6 +7,6 @@
     #./gnome.nix
     ./kde.nix
     #./hyprland.nix
-    ./xorg.nix
+    #./xorg.nix
   ];
 }

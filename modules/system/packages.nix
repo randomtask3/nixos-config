@@ -5,10 +5,8 @@
 }:{
   environment.systemPackages = with pkgs; [
     wget
-    firefox
     kitty
     #mc
-    dialog
     emacs
     git-credential-oauth
   ];
@@ -18,4 +16,6 @@
     enable = true;
     package = pkgs.emacs;
   };
+
+  programs.firefox.enable = true;
 }

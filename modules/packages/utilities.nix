@@ -22,9 +22,9 @@
 
     ######## SYSTEM & CLI TOOLS ########
     gparted
-    libimobiledevice usbmuxd ifuse
+    #libimobiledevice usbmuxd ifuse
     w3m
-    curl
+    #curl
     feh
     #rofi
     #eww

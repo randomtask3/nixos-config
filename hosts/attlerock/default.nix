@@ -5,7 +5,7 @@
   imports = [
     ./hardware-configuration.nix
     ./intel.nix
-    ./autologin.nix
+    ./bootloader.nix
     ../../modules
   ];
   disabledModules = [

@@ -3,16 +3,10 @@
 }:{
   imports = [
     ./desktop
-    ./development
+    #./development
     ./gaming
     ./packages
-    ./scripts
-    ./server
     ./system
     ./work
   ];
-
-  catppuccin.flavor = "mocha";
-  catppuccin.enable = true;
-  catppuccin.accent = "mauve";
 }
