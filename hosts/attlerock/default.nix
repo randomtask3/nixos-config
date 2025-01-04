@@ -1,5 +1,7 @@
 { config,
   lib,
+  pkgs,
+  pkgs-unstable,
   ... 
 }:{
   imports = [
@@ -15,4 +17,8 @@
   networking.networkmanager.enable = true;
   networking.hostName = "attlerock";
   system.stateVersion = "24.05";
+
+  environment.systemPackages = with pkgs; [
+    jellyfin-media-player
+  ];
 }
