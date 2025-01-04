@@ -1,5 +1,6 @@
 {
   networking = {
+    networkmanager.enable = true;
     hosts = {
       "127.0.0.2" = ["other-localhost"];
     };
@@ -10,7 +11,7 @@
     }];
 
     defaultGateway = "10.66.0.1";
-    #nameservers = [ "1.1.1.1" "8.8.8.8" ];
+    nameservers = [ "1.1.1.1" "8.8.8.8" ];
 
     #vlans = {
     #  vlan100 = { id=100; interface="enp2s0"; };
