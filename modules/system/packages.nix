@@ -8,6 +8,8 @@
     kitty
     #mc
     emacs
+    neovim
+    vscodium
     git-credential-oauth
   ];
 
