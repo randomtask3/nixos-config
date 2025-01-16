@@ -4,6 +4,10 @@
     fsType = "btrfs";
     options = [ "rw" ];
   };
+  fileSystems."/media/immich" = {
+    device = "/home/nick/Media";
+    options = [ "bind" "nofail" ];
+  };
   #fileSystems."/home/nick/Games" = {
   #  device = "/dev/vg-NixGuixSUSE/lv-NixGuixSUSE-data";
   #  fsType = "btrfs";
