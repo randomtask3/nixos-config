@@ -20,6 +20,8 @@ selection_menu () {
 
 while : ; do
     clear
+    source ./prompt
+    
     echo "Select an option: "
     selection_menu ${menu_options[@]}
     menu_selection=${command_array[$user_in]}
