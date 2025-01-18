@@ -1,4 +1,11 @@
-{
+{ pkgs,
+  ... 
+}:{
+
+  environment.systemPackages = with pkgs; [
+    home-assistant
+  ];
+
   services.home-assistant = {
     enable = true;
     extraComponents = [
