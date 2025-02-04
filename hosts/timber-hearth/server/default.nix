@@ -14,4 +14,9 @@
     ./tailscale.nix
     #./virtualiztion.nix
   ];
+
+  # Add Sonarr, Radarr, AudiobookShelf, Jellyseer
+  # Mealie recipe selfhosted
+  # Adguard home for firewall
+  # Selfhost git server
 }

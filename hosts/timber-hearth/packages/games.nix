@@ -9,7 +9,7 @@
     #xivlauncher
     prismlauncher
     #pkgs-unstable.vintagestory
-    #protonup wineWowPackages.full winetricks dxvk
+    #wineWowPackages.full winetricks dxvk
     #lutris
     #steam-tui
     #samrewritten
@@ -19,6 +19,7 @@
     ######### SOURCE PORTS ###########
     #openrct2
     #shipwright
+    #_2ship2harkinian
     #openloco
     #dhewm3
     #fallout-ce
@@ -35,7 +36,8 @@
     #pcsxr
     #snes9x
     #ppsspp
-    #mupen64plus
+    #simple64
+    #shadps4
     #yuzu-mainline
     #mednafen
   ];

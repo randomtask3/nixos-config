@@ -9,6 +9,7 @@
     #mc
     emacs
     neovim
+    lunarvim
     vscodium
     git-credential-oauth
   ];
