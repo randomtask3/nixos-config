@@ -2,12 +2,16 @@
 {
   services.navidrome = {
     enable = true;
-    #port = 2283;
     openFirewall = true;
+    settings = {
+        Port = 4533;
+        Address = "10.66.0.10";
+        MusicFolder = "/media/server/Music";
+        #EnableInsightsCollector = true;
+    };
     #host = "10.66.0.10";
     #user = "nick" ;
-    #group = "users";
-    #mediaLocation = "/media/immich/Pictures"; #Doesn't work
+    group = "users";
   };
   environment.systemPackages = with pkgs; [
     navidrome

@@ -4,7 +4,7 @@
     fsType = "btrfs";
     options = [ "rw" ];
   };
-  fileSystems."/media/immich" = {
+  fileSystems."/media/server" = {
     device = "/home/nick/Media";
     options = [ "bind" "nofail" ];
   };

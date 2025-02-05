@@ -8,6 +8,7 @@
     ./samba.nix
     ./immich.nix
     ./home-assistant.nix
+    ./navidrome.nix
     #./nextcloud.nix
     #./minecraft_server.nix
     ./server_packages.nix

@@ -8,6 +8,6 @@
   environment.systemPackages = with pkgs; [    
     #steamcmd
     protonvpn-gui
-    protonvpn-cli2
+    #protonvpn-cli2
   ];
 }
