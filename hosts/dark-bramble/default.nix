@@ -4,16 +4,15 @@
 }:{
   imports = [
     ./hardware-configuration.nix
-    ./nvidia.nix
+    #./nvidia.nix
+    ./desktop
     ../../modules
   ];
   disabledModules = [
     #../../modules/gaming
-    ../../modules/development
-    ../../modules/packages
-    ../../modules/server
+    ../../modules/desktop
   ];
 
   networking.hostName = "dark-bramble";
-  system.stateVersion = "24.05";
+  system.stateVersion = "24.11";
 }

@@ -20,7 +20,7 @@ selection_menu () {
 
 while : ; do
     clear
-    source ./prompt
+    source /home/nick/NixOS/scripts/bash/prompt
     
     echo "Select an option: "
     selection_menu ${menu_options[@]}
