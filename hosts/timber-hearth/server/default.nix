@@ -12,6 +12,7 @@
     #./nextcloud.nix
     #./minecraft_server.nix
     ./server_packages.nix
+    ./sunshine.nix
     ./tailscale.nix
     #./virtualiztion.nix
   ];
