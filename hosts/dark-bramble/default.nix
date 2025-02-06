@@ -3,11 +3,10 @@
   ... 
 }:{
   imports = [
-    ./hardware-configuration.nix
-    #./nvidia.nix
     ./desktop
+    ./system
     ../../modules
-    ./bootloader.nix
+    ../../scripts
   ];
   disabledModules = [
     #../../modules/gaming

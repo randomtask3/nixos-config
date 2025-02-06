@@ -12,6 +12,7 @@
     lunarvim
     vscodium
     git-credential-oauth
+    wakeonlan
   ];
 
   services.flatpak.enable = true;
@@ -21,4 +22,5 @@
   };
 
   programs.firefox.enable = true;
+  programs.neovim.enable = true;
 }
