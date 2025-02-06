@@ -7,6 +7,7 @@
     #./nvidia.nix
     ./desktop
     ../../modules
+    ./bootloader.nix
   ];
   disabledModules = [
     #../../modules/gaming
