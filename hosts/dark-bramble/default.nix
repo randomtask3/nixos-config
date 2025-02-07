@@ -4,6 +4,7 @@
 }:{
   imports = [
     ./desktop
+    ./packages
     ./system
     ../../modules
     ../../scripts

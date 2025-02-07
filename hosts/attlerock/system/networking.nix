@@ -9,7 +9,7 @@
       wakeOnLan.enable = true;
       #wakeOnLan.policy = "magic";
       ipv4.addresses = [{
-        address = "10.66.0.10";
+        address = "10.66.0.12";
         prefixLength = 24;
       }];
     };

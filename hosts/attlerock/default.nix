@@ -5,21 +5,16 @@
   ... 
 }:{
   imports = [
-    ./hardware-configuration.nix
-    ./intel.nix
-    ./bootloader.nix
+    ./system
+    ./packages
     ../../modules
+    ../../scripts
   ];
   disabledModules = [
 
   ];
 
-  networking.networkmanager.enable = true;
   networking.hostName = "attlerock";
   system.stateVersion = "24.05";
 
-  environment.systemPackages = with pkgs; [
-    jellyfin-media-player
-    brave
-  ];
 }

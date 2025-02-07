@@ -6,7 +6,7 @@
   imports = [
     ./bootloader.nix
     ./hardware-configuration.nix
+    ./intel.nix
     ./networking.nix
-    #./thinkpad-p52s.nix
   ];
 }

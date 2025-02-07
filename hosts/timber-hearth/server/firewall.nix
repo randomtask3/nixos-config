@@ -3,6 +3,7 @@
     enable = true;
     allowPing = true;
     allowedTCPPorts = [ 
+      22
       80 
       443 
       445 
