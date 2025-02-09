@@ -8,11 +8,11 @@
     kitty
     #mc
     emacs
-    neovim
     lunarvim
     vscodium
     git-credential-oauth
     wakeonlan
+    jellyfin-media-player
   ];
 
   services.flatpak.enable = true;

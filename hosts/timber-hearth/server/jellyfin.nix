@@ -9,6 +9,5 @@
     jellyfin
     jellyfin-web
     jellyfin-ffmpeg
-    jellyfin-media-player
   ];
 }

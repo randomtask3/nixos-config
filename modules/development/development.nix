@@ -8,8 +8,8 @@
   environment.systemPackages = with pkgs; [    
     ######## CODING & DDEVELOPMENT #########
     #rustup
-    #texstudio texlive.combined.scheme-full
-    #libreoffice
+    texstudio texliveBasic
+    libreoffice
     #helix.packages."${pkgs.system}".helix
 
     ######## 3D & ART #######

@@ -11,7 +11,7 @@
     ../../scripts
   ];
   disabledModules = [
-
+    ../../modules/development
   ];
 
   networking.hostName = "attlerock";

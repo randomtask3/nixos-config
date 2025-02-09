@@ -7,7 +7,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    jellyfin-media-player
-    brave
+    #brave
+    libreoffice
   ];
 }

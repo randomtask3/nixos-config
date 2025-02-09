@@ -3,14 +3,37 @@
   pkgs-unstable,
   ... 
 }:{
+  
+  programs = {
+    hyprland = {
+      enable = true;
+      xwayland.enable = true;
+    };
+    sway.enable = true;
+    wayfire.enable = true;
+  };
+
   services.xserver = {
     enable = true;
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
-  };
 
-  environment.systemPackages = with pkgs; [
+    windowManager = {
+      qtile.enable = true;
+      bspwm.enable = true;
+      stumpwm.enable = true;
+      i3.enable = true;
+      dwm.enable = true;
+      awesome.enable = true;
+      icewm.enable = true;
+      openbox.enable = true;
+    };
+  };
+  
+  environment.systemPackages = with pkgs; [ 
     gnome-tweaks
+    rofi-wayland
+    gcolor3 
   ];
 
   #environment.gnome.excludePackages = (with pkgs; [
