@@ -17,6 +17,7 @@
     enable = true;
     displayManager.lightdm.enable = true;
     desktopManager.gnome.enable = true;
+    desktopManager.enlightenment.enable = true;
 
     windowManager = {
       qtile.enable = true;
