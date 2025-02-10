@@ -10,7 +10,7 @@
       xwayland.enable = true;
     };
     sway.enable = true;
-    wayfire.enable = true;
+    # wayfire.enable = true;  ## Not working
   };
 
   services.xserver = {

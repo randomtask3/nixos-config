@@ -6,7 +6,9 @@
   environment.systemPackages = with pkgs; [
     wget
     kitty
-    #mc
+    mc
+    ranger
+    nnn
     emacs
     lunarvim
     vscodium
