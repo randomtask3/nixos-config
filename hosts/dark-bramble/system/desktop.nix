@@ -5,10 +5,10 @@
 }:{
   
   programs = {
-    hyprland = {
-      enable = true;
-      xwayland.enable = true;
-    };
+    #hyprland = {
+    #  enable = true;
+    #  xwayland.enable = true;
+    #};
     sway.enable = true;
     # wayfire.enable = true;  ## Not working
   };
@@ -17,7 +17,7 @@
     enable = true;
     displayManager.lightdm.enable = true;
     desktopManager.gnome.enable = true;
-    desktopManager.enlightenment.enable = true;
+    #desktopManager.enlightenment.enable = true;
 
     windowManager = {
       qtile.enable = true;
@@ -26,16 +26,15 @@
       i3.enable = true;
       dwm.enable = true;
       awesome.enable = true;
-      icewm.enable = true;
-      openbox.enable = true;
+      #icewm.enable = true;
+      #openbox.enable = true;
     };
   };
   
   environment.systemPackages = with pkgs; [ 
     gnome-tweaks
-    rofi-wayland
-    gcolor3
-    connman
+    #rofi-wayland
+    #gcolor3
   ];
 
   #environment.gnome.excludePackages = (with pkgs; [
