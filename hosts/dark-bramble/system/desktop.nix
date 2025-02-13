@@ -37,12 +37,12 @@
     #gcolor3
   ];
 
-  #environment.gnome.excludePackages = (with pkgs; [
+  environment.gnome.excludePackages = (with pkgs; [
     gnome-console
   #  gnome-photos
   #  gnome-tour
   #  gedit
-  #]) ++ (with pkgs.gnome; [
+  ]) ++ (with pkgs.gnome; [
   #  cheese # webcam tool
   #  gnome-music
   #  gnome-terminal
@@ -55,5 +55,5 @@
   #  iagno # go game
   #  hitori # sudoku game
   #  atomix # puzzle game
-  #]);
+  ]);
 }
