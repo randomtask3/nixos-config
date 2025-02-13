@@ -34,7 +34,8 @@
   environment.systemPackages = with pkgs; [ 
     gnome-tweaks
     rofi-wayland
-    gcolor3 
+    gcolor3
+    connman
   ];
 
   #environment.gnome.excludePackages = (with pkgs; [
