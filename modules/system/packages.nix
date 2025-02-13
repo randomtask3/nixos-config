@@ -15,6 +15,7 @@
     git-credential-oauth
     wakeonlan
     jellyfin-media-player
+    libreoffice
   ];
 
   services.flatpak.enable = true;
