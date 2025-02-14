@@ -17,6 +17,6 @@
     #goxel
     #gimp
     #inkscape
-    #super-slicer
+    super-slicer
   ];
 }
