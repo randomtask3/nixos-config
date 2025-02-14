@@ -16,7 +16,8 @@
   services.xserver = {
     enable = true;
     displayManager.lightdm.enable = true;
-    desktopManager.gnome.enable = true;
+    #desktopManager.gnome.enable = true;
+    desktopManager.xfce.enable = true;
     #desktopManager.enlightenment.enable = true;
 
     windowManager = {
