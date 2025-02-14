@@ -13,7 +13,7 @@
     #freecad
     #openscad
     #kicad
-    cura
+    #cura
     #goxel
     #gimp
     #inkscape
