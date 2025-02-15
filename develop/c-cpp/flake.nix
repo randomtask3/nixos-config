@@ -25,6 +25,7 @@
               conan
               cppcheck
               doxygen
+	      gcc
               gtest
               lcov
               vcpkg
