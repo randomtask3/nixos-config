@@ -16,6 +16,7 @@
   services.displayManager = {
       autoLogin.enable = true;
       autoLogin.user = "nick";
+      defaultSession = "xfce";
     };
   services.xserver = {
     enable = true;
