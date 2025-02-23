@@ -13,9 +13,14 @@
     # wayfire.enable = true;  ## Not working
   };
 
+  services.displayManager = {
+      autoLogin.enable = true;
+      autoLogin.user = "nick";
+    };
   services.xserver = {
     enable = true;
     displayManager.lightdm.enable = true;
+    
     #desktopManager.gnome.enable = true;
     desktopManager.xfce.enable = true;
     #desktopManager.enlightenment.enable = true;
