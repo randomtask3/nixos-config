@@ -4,9 +4,6 @@
   ... 
 }:{
   imports = [
-  ];
-
-  environment.systemPackages = with pkgs; [
-    #brave
+    ./development.nix
   ];
 }
