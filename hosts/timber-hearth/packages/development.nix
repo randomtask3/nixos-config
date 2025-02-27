@@ -7,7 +7,7 @@
 }:{
   environment.systemPackages = with pkgs; [    
     ######## CODING & DDEVELOPMENT #########
-    texstudio texliveBasic
+    texstudio texliveFull
 
     ######## 3D & ART #######
     #freecad
