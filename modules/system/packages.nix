@@ -16,6 +16,7 @@
     wakeonlan
     jellyfin-media-player
     libreoffice
+    cifs-utils
   ];
 
   services.flatpak.enable = true;
