@@ -9,37 +9,45 @@
     #  enable = true;
     #  xwayland.enable = true;
     #};
-    sway.enable = true;
+    #sway.enable = true;
     # wayfire.enable = true;  ## Not working
   };
 
   services.displayManager = {
       autoLogin.enable = true;
       autoLogin.user = "nick";
-      defaultSession = "xfce";
-    };
+      defaultSession = "enlightenment";
+  };
+
+  # Enabling Flatpak for enlightenment
+  xdg.portal.enable = true;
+  xdg.portal.config.common.default = "*";
+  #xdg.portal.configPackages = [pkgs.gnome-session];
+  xdg.portal.extraPortals = [pkgs.gnome-session];
+
   services.xserver = {
     enable = true;
     displayManager.lightdm.enable = true;
-    
-    #desktopManager.gnome.enable = true;
-    desktopManager.xfce.enable = true;
-    #desktopManager.enlightenment.enable = true;
+    #desktopManager.xfce.enable = true;
+    desktopManager.enlightenment.enable = true;
 
     windowManager = {
       qtile.enable = true;
       bspwm.enable = true;
       stumpwm.enable = true;
-      i3.enable = true;
+      #i3.enable = true;
       dwm.enable = true;
-      awesome.enable = true;
+      #awesome.enable = true;
       #icewm.enable = true;
       #openbox.enable = true;
     };
   };
+
+  services.connman.enable = true;
   
   environment.systemPackages = with pkgs; [ 
     gnome-tweaks
+    connman wpa_supplicant #For enlightenment network manager
     #rofi-wayland
     #gcolor3
   ];
