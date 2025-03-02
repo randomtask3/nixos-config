@@ -7,6 +7,7 @@
   services = {
     xserver.enable = true;
     xserver.displayManager.lightdm.enable = true;
+    xserver.desktopManager.enlightenment.enable = true;
     displayManager = {
       autoLogin.enable = true;
       autoLogin.user = "nick";
