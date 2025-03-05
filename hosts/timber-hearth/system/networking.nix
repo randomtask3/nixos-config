@@ -1,6 +1,6 @@
 {
   networking = {
-    #networkmanager.enable = true;
+    networkmanager.enable = false;
     
     dhcpcd.enable = false;
     defaultGateway = "10.66.0.1";

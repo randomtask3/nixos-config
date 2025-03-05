@@ -9,6 +9,7 @@
     #steamcmd
     #protonvpn-gui
     qbittorrent
+    transmission_4-gtk
     protonvpn-cli_2
   ];
 }
