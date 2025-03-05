@@ -10,6 +10,7 @@
     ./home-assistant.nix
     ./navidrome.nix
     #./nextcloud.nix
+    ./openvpn.nix
     #./minecraft_server.nix
     ./server_packages.nix
     ./sunshine.nix
