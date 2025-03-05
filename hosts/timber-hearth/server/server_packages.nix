@@ -7,7 +7,8 @@
 }:{
   environment.systemPackages = with pkgs; [    
     #steamcmd
-    protonvpn-gui
-    #protonvpn-cli2
+    #protonvpn-gui
+    qbittorrent
+    protonvpn-cli_2
   ];
 }
