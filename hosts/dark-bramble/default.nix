@@ -5,7 +5,7 @@
   imports = [
     ./packages
     ./system
-    ../../systeam
+    ../../system
     ../../scripts
     ../../theme
   ];
