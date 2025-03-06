@@ -5,8 +5,9 @@
   imports = [
     ./packages
     ./system
-    ../../modules
+    ../../systeam
     ../../scripts
+    ../../theme
   ];
   disabledModules = [
     #../../modules/gaming

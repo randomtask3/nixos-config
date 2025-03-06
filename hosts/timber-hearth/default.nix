@@ -6,7 +6,7 @@
     ./packages
     ./server
     ./system
-    ../../modules
+    ../../system
     ../../scripts
     ../../theme
   ];

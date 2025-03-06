@@ -3,14 +3,13 @@
   pkgs,
   ...
 }:{
-
-  services.acpid.enable = true;
+  
+  services.connman.enable = true;
   environment.systemPackages = with pkgs; [ 
-    acpi
-    acpid
+    connman wpa_supplicant #For enlightenment network manager
+    #rofi-wayland
+    #gcolor3
   ];
-
-
 
   #services.xserver.videoDrivers = [ "nvidia" ];
   #hardware = {

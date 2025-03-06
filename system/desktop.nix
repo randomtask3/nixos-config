@@ -24,11 +24,9 @@
   };
 
   environment.systemPackages = with pkgs; [ 
-    #connman wpa_supplicant #For enlightenment network manager
     acpi
     acpid
   ];
 
-  #services.connman.enable = true;
   services.acpid.enable = true;
 }

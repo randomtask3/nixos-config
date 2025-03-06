@@ -7,11 +7,11 @@
   imports = [
     ./system
     ./packages
-    ../../modules
+    ../../system
     ../../scripts
   ];
   disabledModules = [
-    ../../modules/development
+    ../../system/desktop.nix
   ];
 
   networking.hostName = "attlerock";
