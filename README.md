@@ -1,6 +1,3 @@
-## -*- coding: utf-8;mode: org;  -*-
-## This file is best viewed with GNU Emacs Org-mode: http://orgmode.org/
-
 #+TITLE: NixOS Flake System configuration
 #+AUTHOR: Nick Brooker
 
