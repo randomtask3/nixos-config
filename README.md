@@ -24,7 +24,7 @@ attlerock     - BOSGAME N100 mini PC for Home Theater
 
 ## DESKTOP ENVIRONMENT
 [www.enlightenment.org](https://www.enlightenment.org/)
-![alt text](image.png)
+![alt text](docs/images/image.png)
 
 
 *** TODO Finish system configuration
