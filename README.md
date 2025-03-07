@@ -21,19 +21,9 @@
 **attlerock**     - BOSGAME N100 mini PC for Home Theater
 
 ## DESKTOP ENVIRONMENT
-Enlightenment ![alt text](image-1.png)
+Enlightenment [label](https://www.enlightenment.org/)
 ![alt text](image.png)
 
-[[Heading 2]]
-
-test reference
-
-[[hed:three]]
-[[hed:three][Reference to Hostnames]]
-
-[[docs/test.org][Test file link]]
-
-** Heading 2
 
 *** TODO Finish system configuration
 -Learn home-manager for config files
