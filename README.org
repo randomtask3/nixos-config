@@ -6,7 +6,7 @@
 
 Overview of NixOS system configration Flake
 
-         __         ____      __ \\
+         __         ____      __ \bigskip
         /  \        \   \    /  \ \\
         \   \        \   \  /   / \\
          \   \        \   \/   / \\
