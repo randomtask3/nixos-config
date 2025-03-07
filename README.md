@@ -16,9 +16,11 @@
 
 ## HOSTS
 
+<pre>
 **timber-hearth** - AMD 5600g/6600xt custom desktop for hosting and development\
 **dark-bramble**  - Lenovo Thinkpad P52s used for development\
 **attlerock**     - BOSGAME N100 mini PC for Home Theater
+<pre>
 
 ## DESKTOP ENVIRONMENT
 [Enlightenment](https://www.enlightenment.org/)
