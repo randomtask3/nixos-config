@@ -17,13 +17,13 @@
 ## HOSTS
 
 <pre>
-**timber-hearth** - AMD 5600g/6600xt custom desktop for hosting and development\
-**dark-bramble**  - Lenovo Thinkpad P52s used for development\
-**attlerock**     - BOSGAME N100 mini PC for Home Theater
+timber-hearth - AMD 5600g/6600xt custom desktop for hosting and development
+dark-bramble  - Lenovo Thinkpad P52s used for development
+attlerock     - BOSGAME N100 mini PC for Home Theater
 </pre>
 
 ## DESKTOP ENVIRONMENT
-[Enlightenment](https://www.enlightenment.org/)
+[www.enlightenment.org](https://www.enlightenment.org/)
 ![alt text](image.png)
 
 
@@ -32,27 +32,27 @@
 -Configure a window manager with rofi, eww, picom, etc...
 -Figure out system theming
 
-*** Possible Hostnames or users:
-:PROPERIES:
-:CUSTOM_ID: hed:three
-:END:
--Timber Hearth
--Dark Bramble
--Attlerock
--Interloper
--Brittle Hollow
--Ash Twin
--Ember Twin
--Giant's Deep
--Quantum Moon
--Hollow's Lantern
--Eye of The Universe
--The Stranger
--Nomai
--Hearthian
--Chert
--Esker
--Feldspar
--Gabbro
--Riebeck
--Solanum
+## HOSTNAME POOL
+
+|     Outer Wilds     | Resident Evil | Final Fantasy |
+| ------------------- | ------------- | ------------- |
+| Timber Hearth       | Progenitor    | Eorzea        |
+| Dark Bramble        | Tyrant        | Hydaelyn      |
+| Attlerock           | Uroboros      | Zordiark      |
+| Interloper          | Chrysalid     | Aether        |
+| Brittle Hollow      | Los Plagas    |               |
+| Ash Twin            | Golgotha      |               |
+| Ember Twin          | Mycorrhiza    |               |
+| Giant's Deep        |               |               |
+| Quantum Moon        |               |               |
+| Hollow's Lantern    |               |               |
+| Eye of The Universe |               |               |
+| The Stranger        |               |               |
+| Nomai               |               |               |
+| Hearthian           |               |               |
+| Chert               |               |               |
+| Esker               |               |               |
+| Feldspar            |               |               |
+| Gabbro              |               |               |
+| Riebeck             |               |               |
+| Solanum             |               |               |
