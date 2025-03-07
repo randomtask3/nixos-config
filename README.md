@@ -1,5 +1,4 @@
 # NixOS Flake System configuration
-Overview of NixOS system configration Flake
 
                 __    
           /\    \ \  /\
@@ -17,8 +16,8 @@ Overview of NixOS system configration Flake
 
 ## Systems
 
-**timber-hearth** - AMD 5600g/6600xt custom desktop for hosting and development
-**dark-bramble** - Lenovo Thinkpad P52s used for development
+**timber-hearth** - AMD 5600g/6600xt custom desktop for hosting and development\
+**dark-bramble** - Lenovo Thinkpad P52s used for development\
 **attlerock** - BOSGAME N100 mini PC for Home Theater
 
 [[Heading 2]]
