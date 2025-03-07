@@ -29,3 +29,5 @@ while : ; do
     eval $menu_selection
     echo "Press Enter to continue"; read
 done
+
+cd ~
