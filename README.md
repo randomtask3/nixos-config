@@ -8,7 +8,7 @@
                / /      \ \/ /____ | |\ \  | |  _   __    __  / / \ \ / /  \/
          _____/ /        \/ _____/ | | \ \ | | | |  \ \  / /  | | | | \ \___
         /____/ /\        / /       | |  \ \| | | |   \ \/ /   | | | |  \___ \
-            / /\ \______/_/____    | |   \   | | |   / __ \   | | | |      \ \
+            / /\ \______/_/____    | |   \   | | |   / .. \   | | | |      \ \
            / /  \ \_____  ____/    | |    \  | | |  / /  \ \  \ \_/ | /\___/ /
            \/   /  \    \ \        |_|     \_| |_| /_/    \_\  \___/  \_____/
                / /\ \    \ \
@@ -21,7 +21,7 @@
 **attlerock**     - BOSGAME N100 mini PC for Home Theater
 
 ## DESKTOP ENVIRONMENT
-Enlightenment [label](https://www.enlightenment.org/)
+[Enlightenment](https://www.enlightenment.org/)
 ![alt text](image.png)
 
 
