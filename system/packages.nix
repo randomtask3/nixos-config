@@ -17,6 +17,7 @@
     jellyfin-media-player
     libreoffice
     cifs-utils
+    virt-manager
   ];
 
   services.flatpak.enable = true;

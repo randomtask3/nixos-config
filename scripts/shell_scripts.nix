@@ -12,6 +12,10 @@ let
     cd /home/nick/NixOS/scripts/bash
     bash pull-nix.sh
   '';
+  push-nix = pkgs.writeShellScriptBin "push-nix" ''
+    cd /home/nick/NixOS/scripts/bash
+    bash push-nix.sh
+  '';
   wake_timber_hearth = pkgs.writeShellScriptBin "wake_timber_hearth" ''
     cd /home/nick/NixOS/scripts/bash
     bash wake_timber_hearth.sh
@@ -26,6 +30,7 @@ in {
     nix-menu
     dev-menu
     pull-nix
+    push-nix
     vintagestory 
   ];
 }
