@@ -17,7 +17,6 @@
     jellyfin-media-player
     libreoffice
     cifs-utils
-    virt-manager
   ];
 
   services.flatpak.enable = true;
@@ -28,4 +27,9 @@
 
   programs.firefox.enable = true;
   programs.neovim.enable = true;
+
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = ["nick"];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
 }
