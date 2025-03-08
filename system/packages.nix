@@ -17,6 +17,7 @@
     jellyfin-media-player
     libreoffice
     cifs-utils
+    gparted
   ];
 
   services.flatpak.enable = true;
