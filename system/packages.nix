@@ -18,6 +18,7 @@
     libreoffice
     cifs-utils
     gparted
+    lshw
   ];
 
   services.flatpak.enable = true;
