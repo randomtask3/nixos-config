@@ -14,7 +14,7 @@
     #mcomix3 calibre
     piper libratbag
     vlc #makemkv handbrake
-    #libsForQt5.ark unrar
+    libsForQt5.ark #unrar
     #gnome.gnome-tweaks
     #keepass
     #authy
