@@ -5,22 +5,23 @@
 }:{
 
   # Enabling Flatpak for enlightenment
-  #xdg.portal.enable = true;
-  #xdg.portal.config.common.default = "*";
-  #xdg.portal.configPackages = [pkgs.gnome-session];
-  #xdg.portal.extraPortals = [pkgs.gnome-session];
+  xdg.portal.enable = true;
+  xdg.portal.config.common.default = "*";
+  xdg.portal.configPackages = [pkgs.gnome-session];
+  xdg.portal.extraPortals = [pkgs.gnome-session];
     
   services = {
     displayManager = {
       autoLogin.enable = true;
       autoLogin.user = "nick";
-      defaultSession = "plasma";
+      #defaultSession = "plasma";
+      defaultSession = "xfce";
     };
-    desktopManager.plasma6.enable = true;
+    #desktopManager.plasma6.enable = true;
     xserver = {
       enable = true;
       displayManager.lightdm.enable = true;
-      #desktopManager.enlightenment.enable = true;
+      desktopManager.xfce.enable = true;
     };
   };
 

@@ -26,6 +26,7 @@
     w3m
     #curl
     feh
+    xorg.libxcvt
     #rofi
     #eww
   ];

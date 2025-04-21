@@ -1,6 +1,6 @@
 {
   imports = [
-    #./amd.nix
+    ./amd.nix
     #./desktop.nix
     ./hardware-configuration.nix
     ./filesystems.nix
