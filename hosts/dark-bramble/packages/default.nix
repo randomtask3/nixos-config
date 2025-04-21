@@ -5,5 +5,6 @@
 }:{
   imports = [
     ./development.nix
+    ./steam.nix
   ];
 }
