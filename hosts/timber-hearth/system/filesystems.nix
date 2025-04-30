@@ -1,16 +1,16 @@
 {
-  fileSystems."/home/nick/Media" = {
-    device = "/dev/vg-Data/lv-Data";
+  fileSystems."/home/nick/Media/disk1" = {
+    device = "/dev/disk/by-label/Red";
     fsType = "btrfs";
-    options = [ "rw" ];
+    options = [ "rw" "nofail" ];
   };
-  fileSystems."/media/server" = {
-    device = "/home/nick/Media";
+  fileSystems."/home/nick/Media/disk2" = {
+    device = "/dev/disk/by-label/Blue4T";
+    fsType = "btrfs";
+    options = [ "rw" "nofail" ];
+  };
+  fileSystems."/media/disk1" = {
+    device = "/home/nick/Media/disk1";
     options = [ "bind" "nofail" ];
   };
-  #fileSystems."/home/nick/Games" = {
-  #  device = "/dev/vg-NixGuixSUSE/lv-NixGuixSUSE-data";
-  #  fsType = "btrfs";
-  #  options = [ "rw" ];
-  #};
 } 
