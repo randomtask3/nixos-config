@@ -7,9 +7,11 @@
 }:{
   environment.systemPackages = with pkgs; [    
     #steamcmd
-    #protonvpn-gui
+    protonvpn-gui
+    openvpn openresolv
     qbittorrent
     transmission_4-gtk
-    protonvpn-cli_2
+    pkgs-unstable.protonvpn-cli_2
+    #protonvpn-cli
   ];
 }

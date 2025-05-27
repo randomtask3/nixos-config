@@ -19,6 +19,7 @@
     cifs-utils
     gparted
     lshw
+    read-edid
   ];
 
   services.flatpak.enable = true;
