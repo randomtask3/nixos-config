@@ -2,7 +2,7 @@
 
   inputs = {
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
     catppuccin.url = "github:catppuccin/nix";
     #agenix.url = "github:ryantm/agenix";
     #helix.url = "github:helix-editor/helix/master";

@@ -15,6 +15,7 @@
       autoLogin.enable = true;
       autoLogin.user = "nick";
       defaultSession = "plasma";
+      #defaultSession = "plasmax11";
       #defaultSession = "xfce";
     };
     desktopManager.plasma6.enable = true;
