@@ -8,7 +8,7 @@
     ./immich.nix
     ./jellyfin.nix
     #./minecraft_server.nix
-    ./navidrome.nix
+    #./navidrome.nix
     #./nextcloud.nix
     ./samba.nix
     ./server_packages.nix

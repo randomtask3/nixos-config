@@ -4,6 +4,7 @@
   ... 
 }:{
   imports = [
+    ./desktop.nix
     ./bootloader.nix
     #./filesystem.nix
     ./hardware-configuration.nix
