@@ -16,14 +16,14 @@
       autoLogin.user = "nick";
       defaultSession = "xfce";
     };
-    windowManager = {
-        bspwm.enable = true;
-        dwm.enable = true;
-    }
     xserver = {
       enable = true;
       displayManager.lightdm.enable = true;
       desktopManager.xfce.enable = true;
+      windowManager = {
+        bspwm.enable = true;
+        dwm.enable = true;
+      };
     };
   };
 
