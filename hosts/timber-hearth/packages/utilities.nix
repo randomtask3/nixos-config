@@ -1,7 +1,7 @@
 { config,
   lib,
   pkgs,
-  pkgs-unstable,
+  pkgs-stable,
   helix,
   ... 
 }:{
@@ -14,19 +14,19 @@
     #mcomix3 calibre
     piper libratbag
     vlc #makemkv handbrake
-    libsForQt5.ark #unrar
+    kdePackages.ark
     #gnome.gnome-tweaks
     #keepass
     #authy
     #qbittorrent #openvpn
 
     ######## SYSTEM & CLI TOOLS ########
-    gparted
+    #gparted
     #libimobiledevice usbmuxd ifuse
-    w3m
+    #w3m
     #curl
     feh
-    xorg.libxcvt
+    #xorg.libxcvt
     #rofi
     #eww
   ];

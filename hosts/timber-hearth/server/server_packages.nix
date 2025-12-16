@@ -1,17 +1,16 @@
 { config,
   lib,
   pkgs,
-  pkgs-unstable,
+  pkgs-stable,
   helix,
   ... 
 }:{
   environment.systemPackages = with pkgs; [    
     #steamcmd
     protonvpn-gui
-    openvpn openresolv
+    #openvpn openresolv
     qbittorrent
-    transmission_4-gtk
-    pkgs-unstable.protonvpn-cli_2
+    #transmission_4-gtk
     #protonvpn-cli
   ];
 }

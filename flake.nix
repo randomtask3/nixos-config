@@ -1,8 +1,8 @@
 { description = "Outer Wilds Ventures Flake";
 
   inputs = {
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     catppuccin.url = "github:catppuccin/nix";
     #agenix.url = "github:ryantm/agenix";
     #helix.url = "github:helix-editor/helix/master";
@@ -11,7 +11,7 @@
   outputs = inputs@{
     self,
     nixpkgs,
-    nixpkgs-unstable,
+    nixpkgs-stable,
     catppuccin,
     #agenix,
     ...
@@ -22,7 +22,7 @@
         system = "x86_64-linux";
         specialArgs = {
           inherit inputs;
-          pkgs-unstable = import nixpkgs-unstable {
+          pkgs-stable = import nixpkgs-stable {
             system = "x86_64-linux";
             config.allowUnfree = true;
           };
@@ -38,7 +38,7 @@
         system = "x86_64-linux";
         specialArgs = {
           inherit inputs;
-          pkgs-unstable = import nixpkgs-unstable {
+          pkgs-stable = import nixpkgs-stable {
             system = "x86_64-linux";
             config.allowUnfree = true;
           };
@@ -54,7 +54,7 @@
         system = "x86_64-linux";
         specialArgs = {
           inherit inputs;
-          pkgs-unstable = import nixpkgs-unstable {
+          pkgs-stable = import nixpkgs-stable {
             system = "x86_64-linux";
             config.allowUnfree = true;
           };

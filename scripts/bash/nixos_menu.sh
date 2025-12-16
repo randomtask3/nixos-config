@@ -3,7 +3,7 @@
 config_path="/home/nick/NixOS"
 menu_options=( "nixos-rebuild" "nix-flake-update" "nix-collect-garbage" "Quit")
 host_name=$(hostname)
-command_array=( "sudo nixos-rebuild switch --flake $config_path#$host_name" "cd $config_path; sudo nix flake update" "sudo nix-collect-garbage" "break")
+command_array=( "sudo nixos-rebuild switch --show-trace --flake $config_path#$host_name" "cd $config_path; sudo nix flake update" "sudo nix-collect-garbage" "break")
 
 selection_menu () {
     input_array=("$@")

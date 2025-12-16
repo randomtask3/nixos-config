@@ -1,7 +1,7 @@
 { config,
   lib,
   pkgs,
-  pkgs-unstable,
+  pkgs-stable,
   ... 
 }:{
   environment.systemPackages = with pkgs; [    
@@ -9,7 +9,7 @@
     #xivlauncher
     prismlauncher
     heroic
-    #pkgs-unstable.vintagestory
+    #pkgs-stable.vintagestory
     #wineWowPackages.full winetricks dxvk
     #lutris
     #steam-tui
@@ -18,9 +18,9 @@
     #steamguard-cli
     
     ######### SOURCE PORTS ###########
-    openrct2
-    shipwright
-    _2ship2harkinian
+    #openrct2
+    #shipwright
+    #_2ship2harkinian
     #openloco
     #dhewm3
     #fallout-ce
@@ -29,15 +29,15 @@
     #arx-libertatis
 
     ######## EMULATORS #########
-    cemu
-    dolphin-emu
-    pcsx2
-    rpcs3
+    #cemu
+    #dolphin-emu
+    #pcsx2
+    #rpcs3
     #citra-nightly
-    duckstation
+    #duckstation
     #snes9x
     #ppsspp
-    simple64
+    #simple64
     #shadps4
     #yuzu-mainline
     #mednafen

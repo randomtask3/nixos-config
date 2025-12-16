@@ -1,6 +1,6 @@
 { config,
   pkgs,
-  pkgs-unstable,
+  pkgs-stable,
   ... 
 }:{
   environment.systemPackages = with pkgs; [
@@ -10,16 +10,16 @@
     ranger
     nnn
     emacs
-    lunarvim
+    #lunarvim
     vscodium
     git-credential-oauth
     wakeonlan
-    jellyfin-media-player
+    #jellyfin-media-player
     libreoffice
     cifs-utils
     gparted
-    lshw
-    read-edid
+    #lshw
+    #read-edid
   ];
 
   services.flatpak.enable = true;

@@ -1,6 +1,6 @@
 { config,
   pkgs,
-  pkgs-unstable,
+  pkgs-stable,
   ... 
 }:{
   fileSystems."/home/nick/Media" = {
