@@ -11,7 +11,7 @@
   ];
   disabledModules = [
     #../../modules/gaming
-    ../../system/desktop.nix
+    #../../system/desktop.nix
   ];
 
   networking.hostName = "dark-bramble";
