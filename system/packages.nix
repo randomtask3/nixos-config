@@ -6,7 +6,6 @@
   environment.systemPackages = with pkgs; [
     wget
     kitty
-    yazi
     #lunarvim
     vscodium
     git-credential-oauth
@@ -15,6 +14,7 @@
     libreoffice
     cifs-utils
     gparted
+    w3m
     #lshw
     #read-edid
   ];
@@ -23,9 +23,20 @@
 
   programs.firefox.enable = true;
   programs.neovim.enable = true;
+  programs.yazi = {
+    enable = true;
+    settings = {
+
+    };
+  };
 
   programs.virt-manager.enable = true;
   users.groups.libvirtd.members = ["nick"];
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
+
+  environment.variables = {
+    EDITOR = "nvim";
+    VISUAL = "nvim";
+  };
 }
