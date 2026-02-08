@@ -65,6 +65,22 @@
           catppuccin.nixosModules.catppuccin
         ];
       };
+
+      "interloper" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = {
+          inherit inputs;
+          pkgs-stable = import nixpkgs-stable {
+            system = "x86_64-linux";
+            config.allowUnfree = true;
+          };
+        };
+        modules = [
+          ./hosts/dark-bramble
+          #agenix.nixosModules.default
+          catppuccin.nixosModules.catppuccin
+        ];
+      };
     };
   };
 }

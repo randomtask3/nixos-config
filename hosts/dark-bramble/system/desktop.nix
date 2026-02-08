@@ -6,19 +6,19 @@
     
   services = {
     displayManager = {
-      autoLogin.enable = true;
-      autoLogin.user = "nick";
-      defaultSession = "plasma";
+      #autoLogin.enable = true;
+      #autoLogin.user = "nick";
+      #defaultSession = "";
     };
-    desktopManager.plasma6.enable = true;
     xserver = {
       enable = true;
+      desktopManager.enlightenment.enable = true;
       displayManager.lightdm.enable = true;
       windowManager = {
-        #bspwm.enable = true;
-        #dwm.enable = true;
-        #openbox.enable = true;
-        #icewm.enable = true;
+        bspwm.enable = true;
+        dwm.enable = true;
+        openbox.enable = true;
+        icewm.enable = true;
       };
     };
   };
