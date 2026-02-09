@@ -12,7 +12,7 @@
     };
     xserver = {
       enable = true;
-      desktopManager.enlightenment.enable = true;
+      #desktopManager.enlightenment.enable = true;
       displayManager.lightdm.enable = true;
       windowManager = {
         bspwm.enable = true;

@@ -6,7 +6,7 @@
 
   services.connman.enable = true;
   environment.systemPackages = with pkgs; [ 
-    connman wpa_supplicant #For enlightenment network manager
+    #connman wpa_supplicant #For enlightenment network manager
     #rofi-wayland
     #gcolor3
   ];

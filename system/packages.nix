@@ -15,11 +15,12 @@
     cifs-utils
     gparted
     w3m
+    openrgb
     #lshw
     #read-edid
   ];
 
-  services.flatpak.enable = true;
+  #services.flatpak.enable = true;
 
   programs.firefox.enable = true;
   programs.neovim.enable = true;

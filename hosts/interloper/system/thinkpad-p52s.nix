@@ -4,23 +4,26 @@
   ...
 }:{
 
-  services.connman.enable = true;
+  #services.connman.enable = true;
   environment.systemPackages = with pkgs; [ 
-    connman wpa_supplicant #For enlightenment network manager
+    #connman wpa_supplicant #For enlightenment network manager
     #rofi-wayland
     #gcolor3
   ];
 
-  #services.xserver.videoDrivers = [ "nvidia" ];
+  #boot.initrd.kernelModules = [ "nouveau" ];
+  #boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
+
+  #services.xserver.videoDrivers = [ "nouveau" ];
   #hardware = {
     #graphics.enable = true;
     #nvidia = {
     #  modesetting.enable = true;
     #  powerManagement.enable = false;
     #  powerManagement.finegrained = false;
-    #  open = false;
-    #  nvidiaSettings = true;
-    #  package = config.boot.kernelPackages.nvidiaPackages.stable;
+      #open = false;
+      #nvidiaSettings = true;
+      #package = config.boot.kernelPackages.nvidiaPackages.stable;
       
       #prime = {
       #  #sync.enable = true;
