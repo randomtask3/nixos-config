@@ -1,10 +1,11 @@
 { config,
-  pkgs,
-  pkgs-stable,
+  lib,
   ... 
 }:{
   imports = [
     ./development.nix
+    ./games.nix
     ./steam.nix
+    ./utilities.nix
   ];
 }

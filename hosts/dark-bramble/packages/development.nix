@@ -7,7 +7,7 @@
 }:{
   environment.systemPackages = with pkgs; [    
     ######## CODING & DDEVELOPMENT #########
-    texstudio texliveFull
+    #texstudio texliveFull
 
     ######## 3D & ART #######
     #freecad
@@ -17,6 +17,6 @@
     #goxel
     #gimp
     #inkscape
-    super-slicer
+    #super-slicer
   ];
 }

@@ -6,21 +6,33 @@
     
   services = {
     displayManager = {
-      autoLogin.enable = true;
-      autoLogin.user = "nick";
-      defaultSession = "plasma";
+      sddm.enable = true;
+      #autoLogin.enable = true;
+      #autoLogin.user = "nick";
+      #defaultSession = "";
     };
-    desktopManager.plasma6.enable = true;
     xserver = {
       enable = true;
-      displayManager.lightdm.enable = true;
+      #desktopManager.enlightenment.enable = true;
+      #displayManager.lightdm.enable = true;
       windowManager = {
-        #bspwm.enable = true;
-        #dwm.enable = true;
-        #openbox.enable = true;
-        #icewm.enable = true;
+        qtile.enable = true;
+        bspwm.enable = true;
+        stumpwm.enable = true;
+        dwm.enable = true;
+        openbox.enable = true;
+        icewm.enable = true;
       };
     };
+  };
+
+  programs = {
+    #hyprland = {
+    #  enable = true;
+    #  xwayland.enable = true;
+    #};
+    #sway.enable = true;
+    # wayfire.enable = true;  ## Not working
   };
 
   environment.systemPackages = with pkgs; [ 

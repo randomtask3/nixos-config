@@ -10,10 +10,9 @@
     ../../theme
   ];
   disabledModules = [
-    #../../modules/gaming
-    ../../system/desktop.nix
+    #../../system/desktop.nix
   ];
 
-  networking.hostName = "interloper";
-  system.stateVersion = "24.11";
+  networking.hostName = "dark-bramble";
+  system.stateVersion = "25.11";
 }
