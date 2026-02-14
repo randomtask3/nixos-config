@@ -13,12 +13,12 @@
     };
     xserver = {
       enable = true;
-      #desktopManager.enlightenment.enable = true;
+      desktopManager.enlightenment.enable = true;
       #displayManager.lightdm.enable = true;
       windowManager = {
-        qtile.enable = true;
+        #qtile.enable = true;
         bspwm.enable = true;
-        stumpwm.enable = true;
+        #stumpwm.enable = true;
         dwm.enable = true;
         openbox.enable = true;
         icewm.enable = true;
@@ -38,7 +38,9 @@
   environment.systemPackages = with pkgs; [ 
     acpi
     acpid
+    connman
   ];
 
   services.acpid.enable = true;
+  services.connman.enable = true;
 }

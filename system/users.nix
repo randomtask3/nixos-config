@@ -3,6 +3,6 @@
   users.users.nick = {
     isNormalUser = true;
     initialPassword = "pass";
-    extraGroups = [ "wheel" "networking" "nextcloud" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "networking" "nextcloud" "networkmanager"]; # Enable ‘sudo’ for the user.
   };
 }

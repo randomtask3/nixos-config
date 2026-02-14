@@ -7,7 +7,6 @@
     ./bootloader.nix
     ./filesystem.nix
     ./hardware-configuration.nix
-    ./jovian.nix
     ./networking.nix
   ];
 }
