@@ -3,16 +3,16 @@
   ... 
 }:{
   imports = [
-    ./packages
-    ./server
     ./system
+    ../../modules
+    ../../server
     ../../system
     ../../scripts
     ../../theme
   ];
   disabledModules = [
     #../modules/work
-    ../../modules/desktop
+    #../../modules/desktop
   ];
 
   networking.hostName = "timber-hearth";

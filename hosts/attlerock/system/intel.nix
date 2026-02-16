@@ -3,7 +3,6 @@
   lib,
   ...
 }:{
-  boot.kernelPackages = pkgs.linuxPackages_latest;
   #boot.kernelParams = [ "i915.force_probe=46d1" ];
   hardware.graphics = {
     enable = true;

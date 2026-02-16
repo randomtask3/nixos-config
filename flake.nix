@@ -35,7 +35,7 @@
         name = hostName;
         value = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
-          specialArgs = commonSpecialArgs;
+          specialArgs = commonSpecialArgs // { inherit hostName; };
           modules = [ hostPath ] ++ baseModules;
         };
       };

@@ -27,3 +27,17 @@
     openFirewall = true;
   };
 }
+
+/*{ config, lib, specialArgs, ... }:
+
+let
+  # Pull the host name from the special args we passed above
+  myHost = specialArgs.hostName;
+in
+{
+  # Example: put the host name into a custom fact
+  environment.etc."my-hostname".text = "This machine is ${myHost}\n";
+
+  # Or use it to conditionally enable something
+  services.someService.enable = lib.mkIf (myHost == "attlerock") true;
+}*/

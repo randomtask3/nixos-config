@@ -7,8 +7,8 @@
   environment.systemPackages = with pkgs; [    
     ######### GAMING SOFTWARE ###########
     #xivlauncher
-    prismlauncher
-    heroic
+    #prismlauncher
+    #heroic
     #pkgs-stable.vintagestory
     #wineWowPackages.full winetricks dxvk
     #lutris

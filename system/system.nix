@@ -3,6 +3,10 @@
   pkgs,
   ... 
 }:{
+  
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.supportedFilesystems = [ "ntfs" ];
+
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
     # stalled-download-timeout = 1000;
@@ -30,8 +34,6 @@
       #"dotnet-sdk-6.0.428"
     ];
   };
-
-  boot.supportedFilesystems = [ "ntfs" ];
 
   # Set your time zone.
   time.timeZone = "America/Montreal"; # Set your time zone.

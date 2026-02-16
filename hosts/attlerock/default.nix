@@ -6,7 +6,6 @@
 }:{
   imports = [
     ./system
-    ./packages
     ../../system
     ../../scripts
   ];

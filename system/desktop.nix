@@ -7,13 +7,14 @@
   services = {
     displayManager = {
       sddm.enable = true;
-      #autoLogin.enable = true;
-      #autoLogin.user = "nick";
-      #defaultSession = "";
+      autoLogin.enable = true;
+      autoLogin.user = "nick";
+      defaultSession = "none+icewm";
     };
     xserver = {
       enable = true;
-      desktopManager.enlightenment.enable = true;
+      #desktopManager.enlightenment.enable = true;
+      #desktopManager.kodi.enable = true;
       #displayManager.lightdm.enable = true;
       windowManager = {
         #qtile.enable = true;
@@ -38,9 +39,10 @@
   environment.systemPackages = with pkgs; [ 
     acpi
     acpid
-    connman
+    #connman
   ];
 
   services.acpid.enable = true;
-  services.connman.enable = true;
+#  services.connman.enable = true;
+  networking.networkmanager.enable = true;
 }

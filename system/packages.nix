@@ -16,6 +16,8 @@
     gparted
     w3m
     openrgb
+    pcmanfm
+    joplin-desktop
     #lshw
     #read-edid
   ];
@@ -39,5 +41,6 @@
   environment.variables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
+    TERMINAL = "kitty";
   };
 }

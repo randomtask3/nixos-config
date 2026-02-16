@@ -1,7 +1,4 @@
-{ config,
-  lib,
-  ... 
-}:{
+{
   imports = [
     ./development.nix
     ./games.nix

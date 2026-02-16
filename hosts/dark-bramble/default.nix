@@ -3,7 +3,6 @@
   ... 
 }:{
   imports = [
-    ./packages
     ./system
     ../../system
     ../../scripts
