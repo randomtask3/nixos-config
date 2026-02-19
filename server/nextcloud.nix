@@ -6,17 +6,16 @@
   ... 
 }:{
     users.users.nextcloud.extraGroups = ["users"];
-    environment.etc."nextcloud-admin-pass".text = "1966Barracuda!";
+    environment.etc."nextcloud-admin-pass".text = "";
     services.nextcloud = {
       enable = true;
-      #hostName = "10.66.0.153";#myHost;
       config.adminpassFile = "/etc/nextcloud-admin-pass";
       config.dbtype = "pgsql";
       database.createLocally = true;
 
-      hostName = "10.66.0.153/nextcloud";
+      hostName = "10.66.0.10";
       settings.trusted_domains = ["10.66.0.*"];
-      home = "/mnt/Nextcloud";
+      #home = "/mnt/Nextcloud";
       #https = true;
       #extraApps = {
         #  inherit (config.services.nextcloud.package.packages.apps) news contacts calendar tasks;

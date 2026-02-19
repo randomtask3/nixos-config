@@ -6,7 +6,7 @@
   ... 
 }:{
     users.users.nextcloud.extraGroups = ["users"];
-    environment.etc."nextcloud-admin-pass".text = "1966Barracuda!";
+    environment.etc."nextcloud-admin-pass".text = "";
     services.nextcloud = {
       enable = true;
       #hostName = "10.66.0.153";#myHost;

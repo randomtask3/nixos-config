@@ -14,8 +14,8 @@
     libreoffice
     cifs-utils
     gparted
-    w3m
-    openrgb
+    #w3m
+    #openrgb
     pcmanfm
     joplin-desktop
     #lshw

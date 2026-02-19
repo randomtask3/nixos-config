@@ -8,9 +8,10 @@
   environment.systemPackages = with pkgs; [    
     #steamcmd
     protonvpn-gui
+    obs-studio
     #openvpn openresolv
     qbittorrent
     #transmission_4-gtk
-    #protonvpn-cli
+    #proton-vpn-cli
   ];
 }

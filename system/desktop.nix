@@ -5,11 +5,13 @@
 }:{
     
   services = {
+    desktopManager.plasma6.enable = true;
     displayManager = {
       sddm.enable = true;
       autoLogin.enable = true;
       autoLogin.user = "nick";
-      defaultSession = "none+icewm";
+      #defaultSession = "none+icewm";
+      defaultSession = "plasma";
     };
     xserver = {
       enable = true;

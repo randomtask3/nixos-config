@@ -9,7 +9,7 @@
     #./jellyfin.nix
     #./minecraft_server.nix
     #./navidrome.nix
-    ./nextcloud.nix
+    #./nextcloud.nix
     #./samba.nix
     #./server_packages.nix
     #./sunshine.nix

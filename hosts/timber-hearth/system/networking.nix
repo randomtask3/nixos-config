@@ -5,7 +5,7 @@
     dhcpcd.enable = false;
     defaultGateway = "10.66.0.1";
     nameservers = [ "1.1.1.1" "8.8.8.8" ];
-    interfaces.enp34s0 = {
+    interfaces.enp0s31f6 = {
       wakeOnLan.enable = true;
       #wakeOnLan.policy = "magic";
       ipv4.addresses = [{
@@ -13,5 +13,5 @@
         prefixLength = 24;
       }];
     };
-
+  };
 }
