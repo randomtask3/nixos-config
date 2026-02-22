@@ -7,10 +7,12 @@
 }:{
   environment.systemPackages = with pkgs; [    
     #steamcmd
-    protonvpn-gui
+    #protonvpn-gui
     obs-studio
+    shotcut
+    video2x
     #openvpn openresolv
-    qbittorrent
+    #qbittorrent
     #transmission_4-gtk
     #proton-vpn-cli
   ];

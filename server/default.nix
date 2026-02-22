@@ -5,13 +5,13 @@
   imports = [
     ./firewall.nix
     #./home-assistant.nix
-    #./immich.nix
-    #./jellyfin.nix
+    ./immich.nix
+    ./jellyfin.nix
     #./minecraft_server.nix
     #./navidrome.nix
     #./nextcloud.nix
     #./samba.nix
-    #./server_packages.nix
+    ./server_packages.nix
     #./sunshine.nix
     #./tailscale.nix
     #./virtualiztion.nix
