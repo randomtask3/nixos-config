@@ -37,6 +37,14 @@
     device = "/home/nick/Media/hdd2-4tb/Media";
     options = [ "bind" "nofail" ];
   };
+  fileSystems."/srv/jellyfin/hdd3" = {
+    device = "/home/nick/Media/hdd3-2tb/Media";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/jellyfin/data" = {
+    device = "/home/nick/Media/hdd1-8tb/Jellyfin";
+    options = [ "bind" "nofail" ];
+  };
   fileSystems."/srv/nextcloud" = {
     device = "/home/nick/Media/hdd1-8tb/Nextcloud";
     options = [ "bind" "nofail" ];
@@ -49,8 +57,11 @@
     device = "/home/nick/Media/hdd1-8tb/Immich";
     options = [ "bind" "nofail" ];
   };
-
-
+  fileSystems."/srv/samba/share/NC-Home" = {
+    device = "/home/nick/Media";
+    options = [ "bind" "nofail" ];
+  };
+  
 
   environment.systemPackages = with pkgs; [
     hd-idle

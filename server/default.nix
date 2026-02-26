@@ -10,7 +10,7 @@
     #./minecraft_server.nix
     #./navidrome.nix
     #./nextcloud.nix
-    #./samba.nix
+    ./samba.nix
     ./server_packages.nix
     #./sunshine.nix
     #./tailscale.nix
