@@ -61,7 +61,19 @@
     device = "/home/nick/Media";
     options = [ "bind" "nofail" ];
   };
-  
+  fileSystems."/srv/secrets" = {
+    device = "/home/nick/Media/hdd1-8tb/Security";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/navidrome" = {
+    device = "/home/nick/Media/hdd1-8tb/Media/Music";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/silverbullet" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/Silverbullet";
+    options = [ "bind" "nofail" ];
+  };
+
 
   environment.systemPackages = with pkgs; [
     hd-idle

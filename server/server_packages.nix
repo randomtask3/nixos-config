@@ -9,8 +9,8 @@
     #steamcmd
     #protonvpn-gui
     obs-studio
-    shotcut
-    video2x
+    #shotcut
+    #video2x
     #openvpn openresolv
     #qbittorrent
     #transmission_4-gtk

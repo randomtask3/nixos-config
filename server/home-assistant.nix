@@ -13,6 +13,7 @@
       "esphome"
       "met"
       "radio_browser"
+      "reolink"
     ];
     config = {
       # Includes dependencies for a basic setup

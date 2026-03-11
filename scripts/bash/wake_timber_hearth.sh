@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-wakeonlan 2c:f0:5d:db:a6:ad
+wakeonlan b4:2e:99:66:bc:6e
