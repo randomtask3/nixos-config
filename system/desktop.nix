@@ -5,17 +5,17 @@
 }:{
     
   services = {
-    desktopManager.plasma6.enable = true;
+    #desktopManager.plasma6.enable = true;
     displayManager = {
       sddm.enable = true;
       autoLogin.enable = true;
       autoLogin.user = "nick";
       #defaultSession = "none+icewm";
-      defaultSession = "plasma";
+      defaultSession = "enlightenment";
     };
     xserver = {
       enable = true;
-      #desktopManager.enlightenment.enable = true;
+      desktopManager.enlightenment.enable = true;
       #desktopManager.kodi.enable = true;
       #displayManager.lightdm.enable = true;
       windowManager = {
@@ -43,6 +43,7 @@
     acpid
     #connman
   ];
+  environment.enlightenment.excludePackages = [ pkgs.enlightenment.econnman ];
 
   services.acpid.enable = true;
 #  services.connman.enable = true;

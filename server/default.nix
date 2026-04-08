@@ -11,8 +11,10 @@
     #./minecraft_server.nix
     ./navidrome.nix
     ./nextcloud.nix
+    #./nginx.nix
     ./samba.nix
     ./server_packages.nix
+    #./silverbullet.nix
     #./sunshine.nix
     #./tailscale.nix
     #./virtualiztion.nix

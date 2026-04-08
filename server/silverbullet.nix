@@ -5,11 +5,13 @@
   services.silverbullet = {
     enable = true;
     spaceDir = "/srv/silverbullet";
-    #host = "10.66.0.10";
-    #port = 9925;
+    listenAddress = "10.66.0.10";
+    listenPort = 3000;
+    user = "nick";
+    openFirewall = true;
     
   };
-  #environment.systemPackages = [
-  #  pkgs.mealie
-  #];
+  environment.systemPackages = [
+    pkgs.silverbullet
+  ];
 }
