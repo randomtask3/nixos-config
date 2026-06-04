@@ -5,31 +5,32 @@
 }:{
     
   services = {
-    #desktopManager.plasma6.enable = true;
+    desktopManager.plasma6.enable = true;
     displayManager = {
       sddm.enable = true;
       autoLogin.enable = true;
       autoLogin.user = "nick";
       #defaultSession = "none+icewm";
-      defaultSession = "enlightenment";
+      defaultSession = "plasma";
     };
     xserver = {
       enable = true;
-      desktopManager.enlightenment.enable = true;
+      #desktopManager.enlightenment.enable = true;
       #desktopManager.kodi.enable = true;
       #displayManager.lightdm.enable = true;
       windowManager = {
         #qtile.enable = true;
-        bspwm.enable = true;
+        #bspwm.enable = true;
         #stumpwm.enable = true;
-        dwm.enable = true;
-        openbox.enable = true;
+        #dwm.enable = true;
+        #openbox.enable = true;
         icewm.enable = true;
       };
     };
   };
 
   programs = {
+    niri.enable = true;
     #hyprland = {
     #  enable = true;
     #  xwayland.enable = true;
@@ -43,7 +44,7 @@
     acpid
     #connman
   ];
-  environment.enlightenment.excludePackages = [ pkgs.enlightenment.econnman ];
+  #environment.enlightenment.excludePackages = [ pkgs.enlightenment.econnman ];
 
   services.acpid.enable = true;
 #  services.connman.enable = true;
