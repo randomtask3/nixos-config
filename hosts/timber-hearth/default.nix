@@ -3,9 +3,9 @@
   ... 
 }:{
   imports = [
+    ./server
     ./system
     ../../modules
-    ../../server
     ../../system
     ../../scripts
     ../../theme

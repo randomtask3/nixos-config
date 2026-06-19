@@ -9,6 +9,7 @@
       445 
       139 
       8123
+      9925
     ]; #Ports for Samba and Nextcloud
     allowedUDPPorts = [ 
       137 

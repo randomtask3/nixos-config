@@ -4,15 +4,14 @@
 }:{
   imports = [
     ./firewall.nix
-    #./home-assistant.nix
-    #./immich.nix
-    #./jellyfin.nix
+    ./home-assistant.nix
+    ./immich.nix
+    ./jellyfin.nix
+    ./mealie.nix
     #./minecraft_server.nix
-    #./navidrome.nix
-    ./nextcloud.nix
-    #./samba.nix
-    #./server_packages.nix
-    #./sunshine.nix
+    ./navidrome.nix
+    ./samba.nix
+    ./server_packages.nix
     #./tailscale.nix
     #./virtualiztion.nix
   ];

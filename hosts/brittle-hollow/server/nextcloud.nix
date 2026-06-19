@@ -17,10 +17,11 @@
       settings.trusted_domains = ["10.66.0.*"];
       home = "/srv/nextcloud";
       #https = true;
-      #extraApps = {
-        #  inherit (config.services.nextcloud.package.packages.apps) news contacts calendar tasks;
-        #};
-      #extraAppsEnable = true;
+      extraApps = {
+        inherit (config.services.nextcloud.package.packages.apps) 
+	notes news contacts calendar tasks;
+      };
+      extraAppsEnable = true;
     };
 
   #services.nginx.virtualHosts.${config.services.nextcloud.hostName} = {

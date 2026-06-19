@@ -6,8 +6,8 @@
     openFirewall = true;
     host = "10.66.0.10";
     #user = "nick" ;
-    group = "users";
-    #mediaLocation = "/media/server/Pictures"; #Doesn't work
+    #group = "users";
+    mediaLocation = "/srv/immich/data"; #Doesn't work
   };
   environment.systemPackages = with pkgs; [
     immich

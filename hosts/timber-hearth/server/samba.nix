@@ -10,7 +10,7 @@
         "security" = "user";
       };
       "NC-Home" = {
-        "path" = "/home/nick/Media";
+        "path" = "/srv/samba/share/NC-Home";
         "browseable" = "yes";
         "read only" = "no";
         "guest ok" = "no";

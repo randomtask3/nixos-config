@@ -6,7 +6,7 @@
     settings = {
         Port = 4533;
         Address = "10.66.0.10";
-        MusicFolder = "/media/disk1/Music";
+        MusicFolder = "/srv/navidrome";
         #EnableInsightsCollector = true;
     };
     #host = "10.66.0.10";
