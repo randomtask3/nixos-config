@@ -7,7 +7,7 @@
     host = "10.66.0.10";
     #user = "nick" ;
     #group = "users";
-    mediaLocation = "/srv/immich/data"; #Doesn't work
+    mediaLocation = "/srv/immich/data";
   };
   environment.systemPackages = with pkgs; [
     immich

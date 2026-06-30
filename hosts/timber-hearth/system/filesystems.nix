@@ -31,46 +31,47 @@
   ## Bind mounts
   fileSystems."/srv/jellyfin/hdd1" = {
     device = "/home/nick/Media/hdd1-8tb/Media";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/jellyfin/hdd2" = {
     device = "/home/nick/Media/hdd2-4tb/Media";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/jellyfin/hdd3" = {
     device = "/home/nick/Media/hdd3-2tb/Media";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/jellyfin/data" = {
     device = "/home/nick/Media/hdd1-8tb/Jellyfin";
-    options = [ "bind" "nofail" ];
-  };
-  fileSystems."/srv/nextcloud" = {
-    device = "/home/nick/Media/hdd1-8tb/Nextcloud";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/immich/Pitcures" = {
     device = "/home/nick/Media/hdd1-8tb/Pictures";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/immich/data" = {
     device = "/home/nick/Media/hdd1-8tb/Immich";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/samba/share/NC-Home" = {
     device = "/home/nick/Media";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/secrets" = {
     device = "/home/nick/Media/hdd1-8tb/Security";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/navidrome" = {
     device = "/home/nick/Media/hdd1-8tb/Media/Music";
-    options = [ "bind" "nofail" ];
-  };
-  fileSystems."/srv/silverbullet" = {
-    device = "/home/nick/Media/hdd1-8tb/Server/Silverbullet";
+    fsType = "none";
     options = [ "bind" "nofail" ];
   };
 
