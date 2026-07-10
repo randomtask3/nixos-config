@@ -4,6 +4,7 @@
 }:{
   imports = [
     ./system
+    ./testing
     #./server
     ../../modules
     #../../server
