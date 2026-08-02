@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
 config_path="/home/nick/NixOS/develop"
-menu_options=( "C/C++" "C#" "LaTex" "Nix" "Python" "Rust" "Quit")
+menu_options=( "OpenGL" "C/C++" "C#" "LaTex" "Nix" "Python" "Rust" "Quit")
 host_name=$(hostname)
-command_array=( "nix develop $config_path/c-cpp" "nix develop $config_path/csharp" "nix develop $config_path/latex" "nix develop $config_path/nix" "nix develop $config_path/python" "nix develop $config_path/rust" "break")
+command_array=( "nix develop $config_path/opengl-cpp" "nix develop $config_path/c-cpp" "nix develop $config_path/csharp" "nix develop $config_path/latex" "nix develop $config_path/nix" "nix develop $config_path/python" "nix develop $config_path/rust" "break")
 
 selection_menu () {
     input_array=("$@")
