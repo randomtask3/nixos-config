@@ -9,8 +9,8 @@
       glabal = {
         "security" = "user";
       };
-      "NC-Home" = {
-        "path" = "/srv/samba/share/NC-Home";
+      "Interloper-Home" = {
+        "path" = "/home/nick";
         "browseable" = "yes";
         "read only" = "no";
         "guest ok" = "no";

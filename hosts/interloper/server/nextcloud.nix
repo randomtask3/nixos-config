@@ -8,12 +8,13 @@
     users.users.nextcloud.extraGroups = ["users"];
     services.nextcloud = {
       enable = true;
+      package = pkgs.nextcloud34;
       config.adminpassFile = "/srv/secrets/nextcloud-admin-pass";
       #config.dbtype = "pgsql";
       config.dbtype = "sqlite";
       database.createLocally = true;
 
-      hostName = "10.66.0.10";
+      hostName = "10.66.0.11";
       settings.trusted_domains = ["10.66.0.*"];
       home = "/srv/nextcloud";
       #https = true;

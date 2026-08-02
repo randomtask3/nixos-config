@@ -13,4 +13,10 @@
       in ["${automount_opts},credentials=/sec/smb-secrets,uid=1000"];
       #,uid=1000,rw,users
   };
+
+  fileSystems."/var/lib/private/mealie" = {
+    device = "/srv/mealie";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
 }

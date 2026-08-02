@@ -4,7 +4,7 @@
 }:{
   imports = [
     ./system
-    #./server
+    ./server
     ../../modules
     ../../system
     ../../scripts
@@ -13,7 +13,6 @@
   disabledModules = [
     #../../system/desktop.nix
   ];
-
   networking.hostName = "interloper";
   system.stateVersion = "25.11";
 }
