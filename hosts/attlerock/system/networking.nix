@@ -14,10 +14,6 @@
     #  }];
     };
 
-    hosts = {
-      "127.0.0.2" = ["other-localhost"];
-    };
-
     #vlans = {
     #  vlan100 = { id=100; interface="enp2s0"; };
     #  vlan101 = { id=101; interface="enp2s0"; };
@@ -30,18 +26,6 @@
     #  address = "10.10.10.3";
     #  prefixLength = 24;
     #}];
-  };
-
-  services.openssh = {
-    enable = true;
-    ports = [ 22 ];
-    settings = {
-      PasswordAuthentication = true;
-      AllowUsers = null; # Allows all users by default. Can be [ "user1" "user2" ]
-      UseDns = true;
-      X11Forwarding = false;
-      PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
-    };
   };
 
   # Configure network proxy if necessary
