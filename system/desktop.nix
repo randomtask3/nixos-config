@@ -5,16 +5,23 @@
 }:{
     
   services = {
-    desktopManager.plasma6.enable = true;
+    #desktopManager.plasma6.enable = true;
     displayManager = {
       sddm.enable = true;
-      autoLogin.enable = true;
-      autoLogin.user = "nick";
+      #autoLogin.enable = true;
+      #autoLogin.user = "nick";
       #defaultSession = "none+icewm";
-      defaultSession = "plasma";
+      #defaultSession = "plasma";
     };
     xserver = {
       enable = true;
+      desktopManager.xfce = {
+        enable = true;
+        enableScreensaver = true;
+        enableWaylandSession = true;
+        #noDesktop = true;
+        enableXfwm = true;
+      };
       #desktopManager.enlightenment.enable = true;
       #desktopManager.kodi.enable = true;
       #displayManager.lightdm.enable = true;

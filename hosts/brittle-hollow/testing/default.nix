@@ -3,7 +3,7 @@
   ... 
 }:{
   imports = [
-    ./test.nix
+    #./test.nix
   ];
   disabledModules = [
     #../../system/desktop.nix
