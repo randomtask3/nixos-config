@@ -46,11 +46,14 @@
     # wayfire.enable = true;  ## Not working
   };
 
+  
   environment.systemPackages = with pkgs; [ 
     acpi
     acpid
+    xfce4-whiskermenu-plugin
     #connman
   ];
+
   #environment.enlightenment.excludePackages = [ pkgs.enlightenment.econnman ];
 
   services.acpid.enable = true;

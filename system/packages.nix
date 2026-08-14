@@ -14,6 +14,7 @@
     libreoffice
     cifs-utils
     gparted
+    enlightenment.terminology
     #w3m
     #openrgb
     pcmanfm
