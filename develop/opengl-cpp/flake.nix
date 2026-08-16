@@ -40,7 +40,7 @@
             # Math
             glm
 
-            sdl2        # audio/input if desired
+            sdl3        # audio/input if desired
             openal
 
             # Debugging

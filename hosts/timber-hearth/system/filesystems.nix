@@ -74,6 +74,11 @@
     fsType = "none";
     options = [ "bind" "nofail" ];
   };
+  fileSystems."/srv/owncloud" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/owncloud";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
 
 
   environment.systemPackages = with pkgs; [

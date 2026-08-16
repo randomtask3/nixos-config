@@ -10,6 +10,7 @@
     ./mealie.nix
     #./minecraft_server.nix
     ./navidrome.nix
+    ./owncloud.nix
     ./samba.nix
     ./server_packages.nix
     #./tailscale.nix

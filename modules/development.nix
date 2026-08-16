@@ -8,6 +8,7 @@
   environment.systemPackages = with pkgs; [    
     ######## CODING & DDEVELOPMENT #########
     #texstudio texliveFull
+    godot
 
     ######## 3D & ART #######
     #freecad
