@@ -15,15 +15,18 @@
     };
     xserver = {
       enable = true;
-      desktopManager.xfce = {
-        enable = true;
-        enableScreensaver = true;
-        enableWaylandSession = true;
-        #noDesktop = true;
-        enableXfwm = true;
+      desktopManager = {
+        xfce = {
+          enable = true;
+          enableScreensaver = true;
+          enableWaylandSession = true;
+          #noDesktop = true;
+          enableXfwm = true;
+        };
+        enlightenment.enable = true;
+        lxqt.enable = true;
+        #kodi.enable = true;
       };
-      #desktopManager.enlightenment.enable = true;
-      #desktopManager.kodi.enable = true;
       #displayManager.lightdm.enable = true;
       windowManager = {
         #qtile.enable = true;
@@ -54,7 +57,7 @@
     #connman
   ];
 
-  #environment.enlightenment.excludePackages = [ pkgs.enlightenment.econnman ];
+  environment.enlightenment.excludePackages = [ pkgs.enlightenment.econnman ];
 
   services.acpid.enable = true;
 #  services.connman.enable = true;
