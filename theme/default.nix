@@ -5,8 +5,11 @@
     ./theme.nix
   ];
 
-  catppuccin.flavor = "mocha";
-  catppuccin.enable = true;
-  catppuccin.autoEnable = true;
-  catppuccin.accent = "mauve";
+  catppuccin = {
+    enable = true;
+    flavor = "mocha";
+    autoEnable = true;
+    accent = "mauve";
+    grub.enable = false;
+  };
 }

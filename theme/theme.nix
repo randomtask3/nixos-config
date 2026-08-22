@@ -42,6 +42,14 @@ let
       cp -r ./* $out/share/icons/buuf-nestort/
     '';
   };
+
+  fallout-grub-theme = pkgs.fetchFromGitHub {
+    owner = "shvchk";
+    repo = "fallout-grub-theme";
+    rev = "master";
+    hash = "sha256-dNRLM9tQjWOyi3s4Q2er5Xn2bpG/yQ/D/+F/lfYXrs8=";
+  };
+
 in
 {
   environment.systemPackages = [
@@ -59,7 +67,7 @@ in
   ];
 
   gtk.iconCache.enable = false;
-
+  
   # Tell XFCE to use the BeOS icons.
   programs.xfconf.enable = true;
 
@@ -70,7 +78,6 @@ in
       <property name="Net" type="empty">
         <property name="IconThemeName" type="string"
                   value="BeOS-r5-Icons"/>
-                  value="buuf-nestort"/>
       </property>
       <property name="Net" type="empty">
         <property name="IconThemeName" type="string"
@@ -78,4 +85,8 @@ in
       </property>
     </channel>
   '';
+
+  boot.loader.grub = {
+    theme = fallout-grub-theme;
+  };
 }

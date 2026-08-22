@@ -23,8 +23,8 @@
           #noDesktop = true;
           enableXfwm = true;
         };
-        enlightenment.enable = true;
-        lxqt.enable = true;
+        #enlightenment.enable = true;
+        #lxqt.enable = true;
         #kodi.enable = true;
       };
       #displayManager.lightdm.enable = true;
@@ -33,14 +33,14 @@
         #bspwm.enable = true;
         #stumpwm.enable = true;
         #dwm.enable = true;
-        #openbox.enable = true;
+        openbox.enable = true;
         icewm.enable = true;
       };
     };
   };
 
   programs = {
-    niri.enable = true;
+    #niri.enable = true;
     #hyprland = {
     #  enable = true;
     #  xwayland.enable = true;
@@ -57,7 +57,7 @@
     #connman
   ];
 
-  environment.enlightenment.excludePackages = [ pkgs.enlightenment.econnman ];
+  #environment.enlightenment.excludePackages = [ pkgs.enlightenment.econnman ];
 
   services.acpid.enable = true;
 #  services.connman.enable = true;
