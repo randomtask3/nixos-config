@@ -8,6 +8,7 @@
     ./mealie.nix
     ./nextcloud.nix
     #./nginx.nix
+    ./ollama.nix
     ./samba.nix
     ./server_packages.nix
     #./tailscale.nix

@@ -4,34 +4,26 @@
   ...
 }:{
 
-  #services.connman.enable = true;
-  environment.systemPackages = with pkgs; [ 
-    #connman wpa_supplicant #For enlightenment network manager
-    #rofi-wayland
-    #gcolor3
-  ];
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
 
-  #boot.initrd.kernelModules = [ "nouveau" ];
-  #boot.extraModulePackages = [ config.boot.kernelPackages.nvidia_x11 ];
+    extraPackages = with pkgs; [
+      intel-media-driver
+      intel-vaapi-driver
+    ];
+  };
 
-  #services.xserver.videoDrivers = [ "nouveau" ];
-  #hardware = {
-    #graphics.enable = true;
-    #nvidia = {
-    #  modesetting.enable = true;
-    #  powerManagement.enable = false;
-    #  powerManagement.finegrained = false;
-      #open = false;
-      #nvidiaSettings = true;
-      #package = config.boot.kernelPackages.nvidiaPackages.stable;
-      
-      #prime = {
-      #  #sync.enable = true;
-      #  offload.enable = true;
-      #  offload.enableOffloadCmd = true;
-      #  intelBusId = "PCI:0:2:0";
-      #  nvidiaBusId = "PCI:1:0:0";
-      #};
-    #};
-  #};
+  services.xserver.videoDrivers = [ "nvidia" ];
+
+  hardware.nvidia = {
+    # Pascal / Quadro P500
+    package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
+
+    open = false;
+
+    modesetting.enable = true;
+
+    powerManagement.enable = true;
+  };
 }
