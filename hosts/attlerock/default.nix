@@ -5,8 +5,13 @@
   ... 
 }:{
   imports = [
-    ./system
-    ../../system
+    ./hardware-configuration.nix
+    ./networking.nix
+    ../../modules/desktop/plasma.nix
+    ../../modules/bootloader/systemd-boot.nix
+    ../../modules/common
+    ../../modules/hardware/n100.nix
+    ../../modules/smb.nix
     ../../scripts
   ];
   disabledModules = [

@@ -3,8 +3,15 @@
   ... 
 }:{
   imports = [
-    ./system
-    ../../system
+    ./filesystem.nix
+    ./hardware-configuration.nix
+    ./networking.nix
+    ../../modules/common
+    ../../modules/desktop/xfce.nix
+    ../../modules/bootloader/grub.nix
+    ../../modules/gaming
+    ../../modules/hardware/amd.nix
+    ../../modules/smb.nix
     ../../scripts
     ../../theme
   ];
@@ -13,5 +20,5 @@
   ];
 
   networking.hostName = "dark-bramble";
-  system.stateVersion = "25.11";
+  system.stateVersion = "26.05";
 }

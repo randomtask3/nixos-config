@@ -3,12 +3,13 @@
   ... 
 }:{
   imports = [
-    ./system
-    ./testing
-    #./server
-    ../../modules
-    #../../server
-    ../../system
+    ./hardware-configuration.nix
+    ./networking.nix
+    ../../modules/common
+    ../../modules/bootloader/grub.nix
+    ../../modules/desktop/xfce.nix
+    #../../modules/hardware/thinkpad-e15.nix
+    ../../modules/clients
     ../../scripts
     ../../theme
   ];

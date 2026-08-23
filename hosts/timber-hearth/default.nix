@@ -3,10 +3,14 @@
   ... 
 }:{
   imports = [
-    ./server
-    ./system
-    ../../modules
-    ../../system
+    ./filesystems.nix
+    ./hardware-configuration.nix
+    ./networking.nix
+    ../../modules/common
+    ../../modules/bootloader/grub.nix
+    ../../modules/desktop/xfce.nix
+    #../../modules/hardware/t400.nix
+    ../../modules/services
     ../../scripts
     ../../theme
   ];
