@@ -11,7 +11,7 @@
     ../../modules/bootloader/grub.nix
     ../../modules/gaming
     ../../modules/hardware/amd.nix
-    ../../modules/smb.nix
+    ../../modules/clients
     ../../scripts
     ../../theme
   ];

@@ -11,7 +11,7 @@
     ../../modules/bootloader/systemd-boot.nix
     ../../modules/common
     ../../modules/hardware/n100.nix
-    ../../modules/smb.nix
+    ../../modules/clients
     ../../scripts
   ];
   disabledModules = [
