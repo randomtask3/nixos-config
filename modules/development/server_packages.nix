@@ -8,7 +8,6 @@
   environment.systemPackages = with pkgs; [    
     #steamcmd
     #protonvpn-gui
-    obs-studio
     #shotcut
     #video2x
     #openvpn openresolv

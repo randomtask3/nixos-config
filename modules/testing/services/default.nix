@@ -4,13 +4,13 @@
 }:{
   imports = [
     ./firewall.nix
+    ./forgejo.nix
     ./home-assistant.nix
     ./mealie.nix
-    ./nextcloud.nix
     #./nginx.nix
     ./ollama.nix
-    ./samba.nix
     ./server_packages.nix
+    ./syncthing.nix
     #./tailscale.nix
     #./virtualiztion.nix
   ];
