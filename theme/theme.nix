@@ -50,11 +50,29 @@ let
     hash = "sha256-dNRLM9tQjWOyi3s4Q2er5Xn2bpG/yQ/D/+F/lfYXrs8=";
   };
 
+  nashville96 = pkgs.stdenv.mkDerivation {
+    pname = "nashville96";
+    version = "unstable";
+
+    src = pkgs.fetchFromGitHub {
+      owner = "donfaustinocortizone";
+      repo = "Nashville96";
+      rev = "main";
+      hash = "sha256-WwygjNutNYxvdl+WoWNk3nxNFFRmdrMhcqr0pPtbGfU=";
+    };
+
+    installPhase = ''
+      mkdir -p $out/share/themes
+      cp -r Themes/* $out/share/themes/
+    '';
+  };
+
 in
 {
   environment.systemPackages = [
     beosIcons
     buuf-nestort
+    nashville96
     pkgs.papirus-icon-theme
     pkgs.mate-icon-theme
     pkgs.arc-icon-theme
