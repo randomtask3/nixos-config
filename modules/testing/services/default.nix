@@ -7,9 +7,9 @@
     ./forgejo.nix
     ./home-assistant.nix
     ./mealie.nix
+    ./nextcloud.nix
     #./nginx.nix
     ./ollama.nix
-    ./server_packages.nix
     ./syncthing.nix
     #./tailscale.nix
     #./virtualiztion.nix

@@ -1,18 +1,18 @@
 { config, lib, ... }:
 
-let
-  cfg = config.my.services.forgejo;
-in
+#let
+#  cfg = config.my.services.forgejo;
+#in
 {
-  options.my.services.forgejo.dataDir = lib.mkOption {
-    type = lib.types.path;
-    default = "/srv/forgejo";
-  };
+  #options.my.services.forgejo.dataDir = lib.mkOption {
+  #  type = lib.types.path;
+  #  default = "/srv/forgejo";
+  #};
 
-  config = lib.mkIf cfg.enable {
+  #config = lib.mkIf cfg.enable {
     services.forgejo = {
       enable = true;
-      stateDir = cfg.dataDir;
+      stateDir = "/srv/forgejo";
 
       database.type = "sqlite3";
 
@@ -27,5 +27,11 @@ in
         actions.ENABLED = true;
       };
     };
-  };
+
+    systemd.tmpfiles.rules = [
+      "d /srv/forgejo        0750 forgejo forgejo -"
+      "d /srv/forgejo/custom 0750 forgejo forgejo -"
+      "d /srv/forgejo/custom/conf 0750 forgejo forgejo -"
+    ];
+  #};
 }
