@@ -74,8 +74,8 @@
     fsType = "none";
     options = [ "bind" "nofail" ];
   };
-  fileSystems."/srv/owncloud" = {
-    device = "/home/nick/Media/hdd1-8tb/Server/owncloud";
+  fileSystems."/srv/nextcloud" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/nextcloud";
     fsType = "none";
     options = [ "bind" "nofail" ];
   };

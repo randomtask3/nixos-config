@@ -5,7 +5,7 @@
   services.nextcloud = {
     enable = true;
 
-    hostName = "10.66.0.11";
+    hostName = "10.66.0.10";
 
     database.createLocally = true;
     config = {
@@ -18,8 +18,8 @@
 
     settings = {
       trusted_domains = [
-        "10.66.0.11"
-        "interloper"
+        "10.66.0.10"
+        "timber-hearth"
       ];
 
       default_phone_region = "CA";
