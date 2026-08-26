@@ -1,11 +1,11 @@
 {
   imports = [
-    ./acpi.nix
-    ./git.nix
-    ./networking.nix
-    ./packages.nix
-    ./steam.nix
-    ./system.nix
+    ./firewall.nix
+    ./immich.nix
+    ./jellyfin.nix
+    ./mealie.nix
+    ./navidrome.nix
+    ./samba.nix
     ./users.nix
     ./utilities.nix
   ];
