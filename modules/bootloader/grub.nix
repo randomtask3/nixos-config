@@ -7,7 +7,7 @@
     grub = {
       efiSupport = true;
       device = "nodev";
-      useOSProber = true;
+      #useOSProber = true;
       extraEntries = ''
         #menuentry "Windows 10" --class guix --class os {
         #  insmod part_gpt

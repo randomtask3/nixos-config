@@ -1,4 +1,5 @@
-{ jovian,
+{ lib,
+  jovian,
   ...
 }:{
   # These are all the unfree dependencies required by `jovian.steam.enable`
@@ -12,8 +13,9 @@
   jovian = {
     steam.enable = true;
     hardware.has.amd.gpu = true;
-    #steam.autoStart = true;
-    steam.desktopSession = "plasma";
+    steam.autoStart = true;
+    steam.desktopSession = "xfce";
+    steam.user = "nick";
   };
 
 }
