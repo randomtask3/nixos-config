@@ -8,11 +8,7 @@
 
     database.type = "sqlite3";
 
-    user = {
-      name = "nick";
-      email = "nbrooker@proton.me";
-      passwordFile = "/srv/secrets/forgejo-password";
-    };
+    useWizard = true;
 
     settings = {
       server = {
