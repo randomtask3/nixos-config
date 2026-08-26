@@ -8,7 +8,8 @@
 
     database.type = "sqlite3";
 
-    useWizard = true;
+    # systemctl show forgejo -p ExecStart --value
+    # sudo -u forgejo /nix/store/8glpsc2jhvq5q8wankliv9vpkrczk719-forgejo-lts-15.0.6/bin/forgejo admin user create \ --username nick \ --password 'YOUR_PASSWORD' \ --email 'your@email.example' \ --admin
 
     settings = {
       server = {
