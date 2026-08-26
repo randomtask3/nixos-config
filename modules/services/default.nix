@@ -5,6 +5,7 @@
     ./jellyfin.nix
     ./mealie.nix
     ./navidrome.nix
+    ./nextcloud.nix
     ./samba.nix
   ];
 }
