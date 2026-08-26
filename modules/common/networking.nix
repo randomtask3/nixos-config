@@ -37,6 +37,13 @@
       PermitRootLogin = "prohibit-password"; # "yes", "without-password", "prohibit-password", "forced-commands-only", "no"
     };
   };
+  networking.firewall = {
+    allowedTCPPorts = [ 
+      22
+    ];
+    allowedUDPPorts = [ 
+    ];
+  };
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";

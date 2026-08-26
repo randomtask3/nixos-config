@@ -3,15 +3,8 @@
     enable = true;
     allowPing = true;
     allowedTCPPorts = [ 
-      22
-      80 
-      443 
-      445 
+      445
       139 
-      8123
-      9925
-      11434
-      8384
     ]; #Ports for Samba and Nextcloud
     allowedUDPPorts = [ 
       137 
