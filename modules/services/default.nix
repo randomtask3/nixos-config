@@ -7,5 +7,6 @@
     ./navidrome.nix
     ./nextcloud.nix
     ./samba.nix
+    ./smb-shares.nix
   ];
 }

@@ -3,10 +3,20 @@
   ... 
 }:{
   imports = [
-    #./test.nix
-    ./services
+    ./firewall.nix
+    ./forgejo.nix
+    ./home-assistant.nix
+    ./mealie.nix
+    ./nextcloud.nix
+    #./nginx.nix
+    ./ollama.nix
+    ./syncthing.nix
+    #./tailscale.nix
+    #./virtualiztion.nix
   ];
-  disabledModules = [
-    #../../system/desktop.nix
-  ];
+
+  # Add Sonarr, Radarr, AudiobookShelf, Jellyseer
+  # Mealie recipe selfhosted
+  # Adguard home for firewall
+  # Selfhost git server
 }

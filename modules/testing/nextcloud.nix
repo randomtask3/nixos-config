@@ -1,12 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  #  *** Need to create /srv/nextcloud/config
-  #      chown nextcloud:nexcloud, and chmod 775 /srv/nextcloud
-  #      make nextcloud-admin in /srv/secrets and chown/chmod
-  #      clear database/and or delete config.php
-
-  
   services.postgresql = {
     enable = true;
 
