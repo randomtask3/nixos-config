@@ -15,12 +15,9 @@
   environment.systemPackages = [
     pkgs.mealie
   ];
-  {
   networking.firewall = {
     allowedTCPPorts = [ 
       9925
     ];
   };
-}
-
 }

@@ -19,8 +19,5 @@
     allowedTCPPorts = [ 
       9925
     ];
-    allowedUDPPorts = [ 
-
-    ];
   };
 }
