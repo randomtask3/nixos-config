@@ -8,6 +8,12 @@
 
     database.type = "sqlite3";
 
+    user = {
+      name = "nick";
+      email = "nbrooker@proton.me";
+      passwordFile = "/srv/secrets/forgejo-password";
+    };
+
     settings = {
       server = {
         DOMAIN = "10.66.0.11";
