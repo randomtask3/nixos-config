@@ -6,7 +6,5 @@
     ./mealie.nix
     ./navidrome.nix
     ./samba.nix
-    ./users.nix
-    ./utilities.nix
   ];
 }
