@@ -10,7 +10,6 @@
     ./nextcloud.nix
     #./nginx.nix
     ./ollama.nix
-    ./syncthing.nix
     #./tailscale.nix
     #./virtualiztion.nix
   ];
