@@ -14,4 +14,9 @@
     immich-cli
     immich-machine-learning
   ];
+  networking.firewall = {
+    allowedTCPPorts = [ 
+      2283
+    ];
+  };
 }

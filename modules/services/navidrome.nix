@@ -16,4 +16,9 @@
   environment.systemPackages = with pkgs; [
     navidrome
   ];
+  networking.firewall = {
+    allowedTCPPorts = [ 
+      4533
+    ];
+  };
 }

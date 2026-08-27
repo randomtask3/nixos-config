@@ -14,4 +14,9 @@
     jellyfin-web
     jellyfin-ffmpeg
   ];
+  networking.firewall = {
+    allowedTCPPorts = [ 
+      8096
+    ];
+  };
 }

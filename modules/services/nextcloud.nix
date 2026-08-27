@@ -22,6 +22,7 @@
   
   services.nextcloud = {
     enable = true;
+    package = pkgs.nextcloud34;
 
     hostName = "10.66.0.10";
 
