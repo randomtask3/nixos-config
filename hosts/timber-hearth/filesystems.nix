@@ -79,6 +79,11 @@
     fsType = "none";
     options = [ "bind" "nofail" ];
   };
+  fileSystems."/srv/forgejo" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/forgejo";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
 
 
   environment.systemPackages = with pkgs; [
