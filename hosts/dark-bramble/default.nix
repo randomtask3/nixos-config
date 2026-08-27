@@ -3,7 +3,7 @@
   ... 
 }:{
   imports = [
-    ./filesystem.nix
+    ./grub-entry.nix
     ./hardware-configuration.nix
     ./networking.nix
     ../../modules/common
