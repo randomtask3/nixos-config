@@ -134,6 +134,7 @@ in
     pkgs.gruvbox-dark-gtk
     #pkgs.gruvbox-gtk-theme
     pkgs.onestepback
+    pkgs.elementary-xfce-icon-theme
   ];
 
   gtk.iconCache.enable = false;
