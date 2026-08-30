@@ -5,7 +5,7 @@
     port = 8081;
     address = "0.0.0.0";
 
-    #libraryPath = "/srv/kiwix";
+    libraryPath = "/srv/kiwix/library.xml";
     openFirewall = true;
   };
 }
