@@ -85,6 +85,27 @@
     options = [ "bind" "nofail" ];
   };
 
+  fileSystems."/srv/kiwix" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/kiwix";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/paperless" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/paperless";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/silverbullet" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/silverbullet";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/syncthing" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/syncthing";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
+
 
   environment.systemPackages = with pkgs; [
     hd-idle

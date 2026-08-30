@@ -9,6 +9,10 @@
     ./nextcloud.nix
     #./ollama-cuda.nix
     ./samba.nix
-    ./smb-shares.nix
+
+    ./kiwix.nix
+    ./paperless.nix
+    ./silverbullet.nix
+    ./syncthing.nix
   ];
 }

@@ -6,6 +6,7 @@
     ./filesystems.nix
     ./hardware-configuration.nix
     ./networking.nix
+    ./smb-shares.nix
     ../../modules/common
     ../../modules/bootloader/grub.nix
     ../../modules/desktop/xfce.nix

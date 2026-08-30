@@ -2,6 +2,7 @@
   ... 
 }:{
   imports = [
+    ./grub.nix
     ./theme.nix
   ];
 

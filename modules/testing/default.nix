@@ -15,7 +15,10 @@
   ];
 
   # Add Sonarr, Radarr, AudiobookShelf, Jellyseer
-  # Mealie recipe selfhosted
   # Adguard home for firewall
   # Selfhost git server
+  # Kiwix for offline wikipedia etc..
+  # Hoarder 
+  # Paperless-ngin
+  # Silverbullet
 }

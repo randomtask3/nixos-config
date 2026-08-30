@@ -43,13 +43,6 @@ let
     '';
   };
 
-  fallout-grub-theme = pkgs.fetchFromGitHub {
-    owner = "shvchk";
-    repo = "fallout-grub-theme";
-    rev = "master";
-    hash = "sha256-dNRLM9tQjWOyi3s4Q2er5Xn2bpG/yQ/D/+F/lfYXrs8=";
-  };
-
   nashville96 = pkgs.stdenv.mkDerivation {
     pname = "nashville96";
     version = "unstable";
@@ -156,8 +149,4 @@ in
       </property>
     </channel>
   '';
-
-  boot.loader.grub = {
-    theme = fallout-grub-theme;
-  };
 }
