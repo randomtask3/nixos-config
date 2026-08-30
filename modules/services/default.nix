@@ -1,6 +1,6 @@
 {
   imports = [
-    ./caddy.nix
+    #./caddy.nix
     ./firewall.nix
     ./forgejo.nix
     ./immich.nix
@@ -13,7 +13,7 @@
 
     ./kiwix.nix
     ./paperless.nix
-    ./silverbullet.nix
+    #./silverbullet.nix
     ./syncthing.nix
   ];
 }
