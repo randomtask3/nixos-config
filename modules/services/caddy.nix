@@ -44,8 +44,9 @@
       #    reverse_proxy 127.0.0.1:80
       #  '';
       #};
-      httpsPort = 8443;
     };
+
+    httpsPort = 8443;
   };
 
   networking.firewall.allowedTCPPorts = [ 8443 ];
