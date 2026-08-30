@@ -3,7 +3,7 @@
     enable = true;
 
     port = 8081;
-    address = "0.0.0.0";
+    address = "10.66.0.10";
 
     libraryPath = "/srv/kiwix/library.xml";
     openFirewall = true;
