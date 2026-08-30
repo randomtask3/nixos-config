@@ -3,7 +3,7 @@
     enable = true;
 
     virtualHosts = {
-      "silverbullet.home.arpa" = {
+      "silverbullet.home.arpa:8443" = {
         extraConfig = ''
           tls internal
           reverse_proxy 127.0.0.1:3001
