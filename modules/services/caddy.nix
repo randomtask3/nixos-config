@@ -46,8 +46,12 @@
       #};
     };
 
+    httpPort = 8088;
     httpsPort = 8443;
   };
 
-  networking.firewall.allowedTCPPorts = [ 8443 ];
+  networking.firewall.allowedTCPPorts = [
+    8088
+    8443
+  ];
 }
