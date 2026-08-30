@@ -5,6 +5,7 @@
     address = "0.0.0.0";
     port = 28981;
 
+    user = "nick";
     dataDir = "/srv/paperless";
 
     settings = {

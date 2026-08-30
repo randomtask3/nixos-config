@@ -4,7 +4,7 @@
 
     spaceDir = "/srv/silverbullet";
 
-    listenAddress = "0.0.0.0";
+    listenAddress = "127.0.0.1";
     listenPort = 3001;
 
     openFirewall = true;
