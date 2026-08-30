@@ -15,8 +15,8 @@
     openDefaultPorts = true;
 
     # Recommended if syncing folders under /home/<user>
-    #user = "alice";
-    #group = "alice";
+    user = "nick";
+    group = "users";
 
     # Web UI, default is localhost only
     guiAddress = "0.0.0.0:8384";
