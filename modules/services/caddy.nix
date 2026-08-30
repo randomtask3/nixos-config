@@ -44,9 +44,7 @@
       #    reverse_proxy 127.0.0.1:80
       #  '';
       #};
-      globalConfig = ''
-        https_port 8443
-      '';
+      httpsPort = 8443;
     };
   };
 
