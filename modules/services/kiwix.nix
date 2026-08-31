@@ -1,4 +1,6 @@
-{
+{ pkgs,
+  ...
+}:{
   services.kiwix-serve = {
     enable = true;
 
