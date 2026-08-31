@@ -8,4 +8,7 @@
     libraryPath = "/srv/kiwix/library.xml";
     openFirewall = true;
   };
+  environment.systemPackages = [
+    pkgs.kiwix-tools
+  ];
 }

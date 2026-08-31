@@ -1,5 +1,6 @@
 {
   imports = [
+    ./adguardhome.nix
     #./caddy.nix
     ./firewall.nix
     ./forgejo.nix
