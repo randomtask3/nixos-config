@@ -4,6 +4,7 @@
     #./caddy.nix
     ./firewall.nix
     ./forgejo.nix
+    ./homepage.nix
     ./immich.nix
     ./jellyfin.nix
     ./mealie.nix
