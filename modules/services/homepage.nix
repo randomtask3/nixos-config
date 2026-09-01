@@ -10,18 +10,19 @@
     allowedHosts = "10.66.0.10:8082";
 
     settings = {
-      title = "Home Server";
+      title = "Outer Wilds Ventures";
       theme = "dark";
-      color = "slate";
+      color = "purple";
+      #color = "violet";
 
       layout = {
         "Network" = {
-          style = "columns";
+          style = "rows";
           columns = 3;
         };
 
         "Services" = {
-          style = "columns";
+          style = "rows";
           columns = 3;
         };
       };
@@ -98,6 +99,9 @@
           cpu = true;
           memory = true;
           disk = "/";
+          disk = "/home/nick/Media/hdd1-8tb"
+          disk = "/home/nick/Media/hdd2-4tb"
+          disk = "/home/nick/Media/hdd3-2tb"
         };
       }
 
