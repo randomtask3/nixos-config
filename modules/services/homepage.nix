@@ -90,7 +90,7 @@
                 #enableMediaControl: false # optional, defaults to true
                 #showEpisodeNumber: true # optional, defaults to false
                 #expandOneStreamToTwoRows: false # optional, defaults to true
-              }
+              };
             };
           }
 
