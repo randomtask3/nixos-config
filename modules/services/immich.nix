@@ -5,10 +5,14 @@
     port = 2283;
     openFirewall = true;
     host = "10.66.0.10";
-    user = "nick" ;
+    user = "nick";
     group = "users";
+
+    # PostgreSQL account
+    database.user = "immich";
     mediaLocation = "/srv/immich/data";
   };
+  users.users.nick.extraGroups = [ "immich" ];
   environment.systemPackages = with pkgs; [
     immich
     immich-cli
