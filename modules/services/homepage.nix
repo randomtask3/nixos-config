@@ -81,15 +81,15 @@
               icon = "jellyfin.png";
               widget = {
                 type = "jellyfin";
-                url: http://jellyfin.host.or.ip:port
-                key: 9c53450c9c50410e91badb5470831c1e
-                version: 2 # optional, default is 1
-                enableBlocks: true # optional, defaults to false
-                enableNowPlaying: true # optional, defaults to true
-                enableUser: true # optional, defaults to false
-                enableMediaControl: false # optional, defaults to true
-                showEpisodeNumber: true # optional, defaults to false
-                expandOneStreamToTwoRows: false # optional, defaults to true
+                url = "http://10.66.0.10:8096";
+                key = "9c53450c9c50410e91badb5470831c1e";
+                #version: 2 # optional, default is 1
+                #enableBlocks: true # optional, defaults to false
+                #enableNowPlaying: true # optional, defaults to true
+                #enableUser: true # optional, defaults to false
+                #enableMediaControl: false # optional, defaults to true
+                #showEpisodeNumber: true # optional, defaults to false
+                #expandOneStreamToTwoRows: false # optional, defaults to true
               }
             };
           }
