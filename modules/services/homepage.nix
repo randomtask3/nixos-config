@@ -223,7 +223,7 @@
               description = "Bookmarks";
               icon = "linkwarden.png";
             };
-          };
+          }
 
           {
             "Forgejo" = {
@@ -231,7 +231,7 @@
               description = "Git Hosting";
               icon = "forgejo.png";
             };
-          };
+          }
         ];
       }
 
