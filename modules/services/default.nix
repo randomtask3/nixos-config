@@ -12,6 +12,7 @@
     ./nextcloud.nix
     #./ollama-cuda.nix
     ./samba.nix
+    ./uptime-kuma.nix
 
     ./kiwix.nix
     ./paperless.nix
