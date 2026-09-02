@@ -15,6 +15,9 @@
     #libraryPath = "/srv/kiwix/library.xml";
     #openFirewall = true;
   };
+
+  networking.firewall.allowedTCPPorts = [ 3001 ];
+
   environment.systemPackages = [
     
   ];
