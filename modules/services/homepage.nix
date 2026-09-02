@@ -111,9 +111,9 @@
           cpu = true;
           memory = true;
           disk = "/";
-          disk = "/home/nick/Media/hdd1-8tb"
-          disk = "/home/nick/Media/hdd2-4tb"
-          disk = "/home/nick/Media/hdd3-2tb"
+          disk = "/home/nick/Media/hdd1-8tb";
+          disk = "/home/nick/Media/hdd2-4tb";
+          disk = "/home/nick/Media/hdd3-2tb";
         };
       }
 
