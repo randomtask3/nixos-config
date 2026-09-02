@@ -12,9 +12,7 @@
     database.user = "immich";
     mediaLocation = "/srv/immich/data";
 
-    environment = {
-      DB_URL = "postgresql://immich@/immich?host=/run/postgresql";
-    };
+    environment.DB_URL = lib.mkForce "postgresql://immich@/immich?host=/run/postgresql";
   };
   users.users.nick.extraGroups = [ "immich" ];
   environment.systemPackages = with pkgs; [
