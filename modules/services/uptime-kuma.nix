@@ -6,6 +6,7 @@
     package = pkgs.uptime-kuma;
 
     settings = {
+      HOST = "0.0.0.0";
       PORT = "3001";
     };
     #port = 8081;
