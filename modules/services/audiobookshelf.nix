@@ -9,7 +9,7 @@
 
     dataDir = "/srv/audiobookshelf";
     package = pkgs.audiobookshelf;
-    openDefaultPorts = true;
+    openFirewall = true;
     user = "nick";
     group = "users";
     port = 8000;
