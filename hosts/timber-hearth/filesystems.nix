@@ -105,7 +105,7 @@
     fsType = "none";
     options = [ "bind" "nofail" ];
   };
-  fileSystems."/srv/audiobookshelf" = {
+  fileSystems."/var/lib/audiobookshelf" = {
     device = "/home/nick/Media/hdd1-8tb/Server/audiobookshelf";
     fsType = "none";
     options = [ "bind" "nofail" ];

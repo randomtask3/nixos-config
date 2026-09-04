@@ -7,7 +7,7 @@
   services.audiobookshelf = {
     enable = true;
 
-    dataDir = "/srv/audiobookshelf";
+    #dataDir = "/srv/audiobookshelf";
     package = pkgs.audiobookshelf;
     openFirewall = true;
     user = "nick";
