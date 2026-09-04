@@ -4,7 +4,7 @@
     ./audiobookshelf.nix
     ./calibre-web.nix
     ./kavita.nix
-    ./linkwarden.nix
+    #./linkwarden.nix
     #./caddy.nix
     ./firewall.nix
     ./forgejo.nix
