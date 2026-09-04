@@ -1,9 +1,9 @@
 {
   imports = [
     ./adguardhome.nix
-    ./audiobookshelf.nix
-    ./calibre-web.nix
-    ./kavita.nix
+    #./audiobookshelf.nix
+    #./calibre-web.nix
+    #./kavita.nix
     #./linkwarden.nix
     #./caddy.nix
     ./firewall.nix

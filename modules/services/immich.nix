@@ -9,7 +9,7 @@
     group = "users";
     mediaLocation = "/srv/immich/data";
   };
-  #users.users.nick.extraGroups = [ "immich" ];
+  users.users.nick.extraGroups = [ "immich" ];
   environment.systemPackages = with pkgs; [
     immich
     immich-cli
