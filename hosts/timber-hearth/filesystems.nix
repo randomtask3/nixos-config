@@ -105,6 +105,26 @@
     fsType = "none";
     options = [ "bind" "nofail" ];
   };
+  fileSystems."/srv/audiobookshelf" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/audiobookshelf";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/calibre-web" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/calibre-web";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/kavita" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/kavita";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
+  fileSystems."/srv/linkwarden" = {
+    device = "/home/nick/Media/hdd1-8tb/Server/linkwarden";
+    fsType = "none";
+    options = [ "bind" "nofail" ];
+  };
 
 
   environment.systemPackages = with pkgs; [
