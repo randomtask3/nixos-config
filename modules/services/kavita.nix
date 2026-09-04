@@ -8,7 +8,7 @@
     enable = true;
     package = pkgs.kavita;
     user = "nick";
-    group = "users";
+    #group = "users";
 
     settings = {
       Port = 5000;
