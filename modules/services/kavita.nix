@@ -9,7 +9,7 @@
       Port = 5000;
       IpAddresses = "0.0.0.0,::";
     };
-    dataDir = "/srv/calibre";
+    dataDir = "/srv/kavita";
   };
 
   networking.firewall.allowedTCPPorts = [
