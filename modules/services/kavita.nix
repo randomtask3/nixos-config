@@ -1,4 +1,9 @@
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}:{
   services.kavita = {
     enable = true;
     package = pkgs.kavita;

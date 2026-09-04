@@ -1,4 +1,9 @@
 {
+  config,
+  pkgs,
+  lib,
+  ...
+}:{
   services.calibre-web = {
     enable = true;
     calibrePackage = pkgs.calibre;
