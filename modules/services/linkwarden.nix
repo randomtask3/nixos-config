@@ -14,7 +14,7 @@
     user = "nick";
     group = "users";
     port = 3003;
-
+    environmentFile = "/srv/secrets/linkwarden";
     host = "10.66.0.10";
   };
 

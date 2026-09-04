@@ -65,7 +65,7 @@
     options = [ "bind" "nofail" ];
   };
   fileSystems."/srv/secrets" = {
-    device = "/home/nick/Media/hdd1-8tb/Security";
+    device = "/home/nick/Media/hdd1-8tb/Server/secrets";
     fsType = "none";
     options = [ "bind" "nofail" ];
   };
