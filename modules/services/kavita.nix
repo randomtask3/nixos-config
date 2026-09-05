@@ -15,6 +15,7 @@
       IpAddresses = "0.0.0.0,::";
     };
     dataDir = "/srv/kavita";
+    tokenKeyFile = "/srv/secrets/kavita";
   };
 
   users.users.nick.extraGroups = [ "kavita" ];
