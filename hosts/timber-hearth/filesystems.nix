@@ -110,7 +110,7 @@
     fsType = "none";
     options = [ "bind" "nofail" ];
   };
-  fileSystems."/srv/calibre-web" = {
+  fileSystems."/srv/calibre" = {
     device = "/home/nick/Media/hdd1-8tb/Server/calibre-web";
     fsType = "none";
     options = [ "bind" "nofail" ];
