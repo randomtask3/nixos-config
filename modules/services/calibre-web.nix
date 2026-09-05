@@ -20,10 +20,14 @@
     options = {
       enableBookConversion = true;
       enableBookUploading = true;
-      #calibreLibrary = "/srv/calibre/library";
+      calibreLibrary = "/srv/calibre/library";
     };
     dataDir = "/srv/calibre";
   };
+
+  environment.systemPackages = with pkgs; [
+    calibre
+  ];
 
   networking.firewall.allowedTCPPorts = [
     8083
