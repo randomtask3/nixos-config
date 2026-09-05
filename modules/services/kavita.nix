@@ -7,7 +7,7 @@
   services.kavita = {
     enable = true;
     package = pkgs.kavita;
-    user = "nick";
+    #user = "nick";
     #group = "users";
 
     settings = {
@@ -16,6 +16,8 @@
     };
     dataDir = "/srv/kavita";
   };
+
+  users.users.nick.extraGroups = [ "kavita" ];
 
   networking.firewall.allowedTCPPorts = [
     5000

@@ -27,6 +27,8 @@
 
   environment.systemPackages = with pkgs; [
     calibre
+    # sudo -u nick calibredb list --with-library /srv/calibre/library
+    # sudo -u nick calibredb add /path/to/comic.cbz --with-library /srv/calibre/library
   ];
 
   networking.firewall.allowedTCPPorts = [

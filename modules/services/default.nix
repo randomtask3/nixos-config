@@ -3,7 +3,7 @@
     ./adguardhome.nix
     ./audiobookshelf.nix
     ./calibre-web.nix
-    #./kavita.nix
+    ./kavita.nix
     #./linkwarden.nix
     #./caddy.nix
     ./firewall.nix
