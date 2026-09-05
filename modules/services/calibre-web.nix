@@ -8,6 +8,7 @@
     enable = true;
     calibrePackage = pkgs.calibre;
     package = pkgs.calibre-web;
+    openFirewall = true;
 
     listen = {
       ip = "0.0.0.0";
@@ -18,7 +19,8 @@
 
     options = {
       enableBookConversion = true;
-      calibreLibrary = "/srv/calibre/library";
+      enableBookUploading = true;
+      #calibreLibrary = "/srv/calibre/library";
     };
     dataDir = "/srv/calibre";
   };
