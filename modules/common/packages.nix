@@ -13,6 +13,7 @@
     cifs-utils
     gparted
     pcmanfm
+    xarchiver
   ];
 
   programs.firefox.enable = true;
