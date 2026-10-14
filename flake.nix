@@ -46,6 +46,7 @@
       { name = "dark-bramble";   path = ./hosts/dark-bramble; }
       { name = "interloper";     path = ./hosts/interloper; }
       { name = "brittle-hollow"; path = ./hosts/brittle-hollow; }
+      { name = "nomai"; path = ./hosts/nomai; }
     ];
 
     nixosConfigurations =

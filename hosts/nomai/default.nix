@@ -11,7 +11,7 @@
     ../../modules/bootloader/grub.nix
     ../../modules/gaming
     ../../modules/hardware/amd.nix
-    ../../modules/clients
+    #../../modules/clients
     #../../modules/services/ollama-rocm.nix
     ../../scripts
     ../../theme

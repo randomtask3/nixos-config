@@ -39,7 +39,7 @@
     };
   };
 
-  services.xscreensaver.enable = true;
+  #services.xscreensaver.enable = true;
   programs = {
     #niri.enable = true;
     #hyprland = {
@@ -53,6 +53,6 @@
   
   environment.systemPackages = with pkgs; [ 
     xfce4-whiskermenu-plugin
-    xscreensaver
+    #xscreensaver
   ];
 }
