@@ -8,6 +8,7 @@
       "10.66.0.11" = ["interloper"];
       "10.66.0.12" = ["attlerock"];
       "10.66.0.13" = ["dark-bramble"];
+      "10.66.0.14" = ["nomai"];
     };
 
     #vlans = {

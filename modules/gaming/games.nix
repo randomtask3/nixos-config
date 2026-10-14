@@ -6,9 +6,9 @@
 }:{
   environment.systemPackages = with pkgs; [    
     ######### GAMING SOFTWARE ###########
-    #xivlauncher
-    #prismlauncher
-    #heroic
+    xivlauncher
+    prismlauncher
+    heroic
     #pkgs-stable.vintagestory
     #wineWowPackages.full winetricks dxvk
     #lutris
@@ -21,6 +21,8 @@
     #openrct2
     #shipwright
     #_2ship2harkinian
+    #zelda64recomp
+    #banjorecomp
     #openloco
     #dhewm3
     #fallout-ce
