@@ -8,7 +8,7 @@
     ######### GAMING SOFTWARE ###########
     xivlauncher
     prismlauncher
-    heroic
+    pkgs-stable.heroic
     #pkgs-stable.vintagestory
     #wineWowPackages.full winetricks dxvk
     #lutris

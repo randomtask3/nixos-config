@@ -9,6 +9,9 @@
       device = "nodev";
       #useOSProber = true;
       extraEntries = ''
+        menuentry "BIOS" --class bios {
+          fwsetup
+        }
         #menuentry "Windows 10" --class guix --class os {
         #  insmod part_gpt
         #  insmod ext2
