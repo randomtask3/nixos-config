@@ -13,6 +13,6 @@
       PAPERLESS_TIME_ZONE = "America/Toronto";
     };
   };
-
+  users.users.nick.extraGroups = [ "redis-paperless" ];
   networking.firewall.allowedTCPPorts = [ 28981 ];
 }
