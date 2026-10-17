@@ -5,7 +5,9 @@
     port = 3002;
     openFirewall = true;
 
-    settings = {};
+    settings = {
+      http.address = "10.66.0.10:3002";
+    };
   };
 
   networking.firewall.allowedTCPPorts = [
