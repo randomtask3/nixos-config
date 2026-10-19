@@ -26,7 +26,7 @@ let
     pname = "buuf-nestort";
     version = "unstable";
 
-    src = ./theme/icons/buuf-nestort.tar.gz;
+    src = /home/nick/buuf-nestort.tar.gz;
 
     dontBuild = true;
 
