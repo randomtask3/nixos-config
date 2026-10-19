@@ -4,7 +4,7 @@
   ... 
 }:
 let
-
+/*
   buuf-nestort = pkgs.stdenvNoCC.mkDerivation {
     pname = "buuf-nestort";
     version = "unstable";
@@ -18,6 +18,21 @@ let
     installPhase = ''
       mkdir -p $out/share/icons/buuf-nestort
       cp -r ./* $out/share/icons/buuf-nestort/
+    '';
+  };
+*/
+
+  buuf-nestort = pkgs.stdenvNoCC.mkDerivation {
+    pname = "buuf-nestort";
+    version = "unstable";
+
+    src = ./theme/icons/buuf-nestort.tar.gz;
+
+    dontBuild = true;
+
+    installPhase = ''
+      mkdir -p $out/share/icons
+      tar -xzf $src -C $out/share/icons
     '';
   };
 
