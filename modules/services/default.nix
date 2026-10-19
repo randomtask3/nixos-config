@@ -14,6 +14,7 @@
     ./mealie.nix
     ./navidrome.nix
     ./nextcloud.nix
+    ./nix-serve.nix
     #./ollama-cuda.nix
     ./samba.nix
     ./uptime-kuma.nix

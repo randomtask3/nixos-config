@@ -17,10 +17,12 @@
       #"https://mirror.sjtu.edu.cn/nix-channels/store"
       # status: https://mirrors.ustc.edu.cn/status/
       # "https://mirrors.ustc.edu.cn/nix-channels/store"
+      "http://10.66.0.10:5000"
       "https://cache.nixos.org"
     ];
     trusted-public-keys = [
       # the default public key of cache.nixos.org, it's built-in, no need to add it here
+      "timber-hearth-1:/FCeejHL9+ZQd5s5aXEo9lqXVYbs8CUUZyv9MYcGwhk="
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
     ];
   };
