@@ -3,7 +3,7 @@
 }:{
 
   imports = [
-    ./buuf.nix
+    #./buuf.nix
     ./icons.nix
   ];
 

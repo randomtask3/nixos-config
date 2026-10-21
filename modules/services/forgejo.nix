@@ -13,8 +13,8 @@
 
     settings = {
       server = {
-        DOMAIN = "10.66.0.11";
-        ROOT_URL = "http://10.66.0.11:3000/";
+        DOMAIN = "10.66.0.10";
+        ROOT_URL = "http://10.66.0.10:3000/";
         HTTP_PORT = 3000;
       };
 
