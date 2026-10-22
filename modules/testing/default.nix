@@ -4,10 +4,9 @@
 }:{
   imports = [
     ./firewall.nix
-    ./forgejo.nix
+    #./forgejo.nix
     ./home-assistant.nix
     ./mealie.nix
-    ./nextcloud.nix
     #./nginx.nix
     ./ollama.nix
     #./tailscale.nix
