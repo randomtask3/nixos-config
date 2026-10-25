@@ -7,17 +7,17 @@
   };
   users.groups.remotebuild = {};
 
-  users.users.remotebuild = {
-    isNormalUser = true;
-    group = "remotebuild";
-    createHome = false;
+  #users.users.remotebuild = {
+  #  isNormalUser = true;
+  #  group = "remotebuild";
+  #  createHome = false;
 
-    openssh.authorizedKeys.keyFiles = [
-      ./remotebuild.pub
-    ];
-  };
+  #  openssh.authorizedKeys.keyFiles = [
+  #    ./remotebuild.pub
+  #  ];
+  #};
 
-  nix.settings.trusted-users = [
-    "remotebuild"
-  ];
+  #nix.settings.trusted-users = [
+  #  "remotebuild"
+  #];
 }
