@@ -1,6 +1,7 @@
 {
   imports = [
     ./adguardhome.nix
+    ./attic.nix
     ./audiobookshelf.nix
     ./calibre-web.nix
     ./kavita.nix
@@ -14,7 +15,6 @@
     ./mealie.nix
     ./navidrome.nix
     ./nextcloud.nix
-    ./nix-serve.nix
     #./ollama-cuda.nix
     #./prometheus.nix
     ./samba.nix
