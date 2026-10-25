@@ -16,6 +16,7 @@
     ./nextcloud.nix
     ./nix-serve.nix
     #./ollama-cuda.nix
+    #./prometheus.nix
     ./samba.nix
     ./uptime-kuma.nix
 
