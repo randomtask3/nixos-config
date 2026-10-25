@@ -1,4 +1,6 @@
-{
+{ pkgs,
+  ...
+}:{
   networking.firewall.allowedTCPPorts = [
     8084
   ];
