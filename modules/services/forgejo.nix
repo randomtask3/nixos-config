@@ -18,7 +18,7 @@
         HTTP_PORT = 3000;
       };
 
-      service.DISABLE_REGISTRATION = true;
+      service.DISABLE_REGISTRATION = false;
       actions.ENABLED = true;
     };
   };

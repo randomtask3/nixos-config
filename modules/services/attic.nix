@@ -16,7 +16,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    attic-client
+    #attic-client
     # sudo -u nick calibredb list --with-library /srv/calibre/library
     # sudo -u nick calibredb add /path/to/comic.cbz --with-library /srv/calibre/library
   ];
@@ -59,8 +59,8 @@ First, generate an administrative token on timber-hearth:
   sudo atticd-atticadm make-token \
     --sub homelab-admin \
     --validity 1y \
-    --create-cache homelab \
     --configure-cache homelab \
+    --configure-cache-retention homelab \
     --pull homelab \
     --push homelab
 

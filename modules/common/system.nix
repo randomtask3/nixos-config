@@ -17,14 +17,34 @@
       #"https://mirror.sjtu.edu.cn/nix-channels/store"
       # status: https://mirrors.ustc.edu.cn/status/
       # "https://mirrors.ustc.edu.cn/nix-channels/store"
-      "http://10.66.0.10:5000"
+      "http://10.66.0.10:8084/homelab"
       "https://cache.nixos.org"
     ];
     trusted-public-keys = [
       # the default public key of cache.nixos.org, it's built-in, no need to add it here
-      "timber-hearth-1:/FCeejHL9+ZQd5s5aXEo9lqXVYbs8CUUZyv9MYcGwhk="
+      "homelab:duOFfYTLo++W8/qAQLBv6SLATouxmzx5i5f597rs+4o="
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
     ];
+  };
+
+  environment.systemPackages = [
+    pkgs.attic-client
+  ];
+
+  systemd.services.attic-watch-store = {
+    description = "Watch the Nix store and upload paths to Attic";
+
+    wantedBy = [ "multi-user.target" ];
+    after = [ "network-online.target" ];
+    wants = [ "network-online.target" ];
+
+    serviceConfig = {
+      ExecStart =
+        "${pkgs.attic-client}/bin/attic watch-store timber-hearth:homelab";
+
+      Restart = "always";
+      RestartSec = 10;
+    };
   };
 
   nixpkgs.config = {
